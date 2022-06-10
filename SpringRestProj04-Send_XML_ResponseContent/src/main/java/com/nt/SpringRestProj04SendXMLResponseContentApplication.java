@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringRestProj03SendJsonResponseContentApplication {
+public class SpringRestProj04SendXMLResponseContentApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringRestProj03SendJsonResponseContentApplication.class, args);
+		SpringApplication.run(SpringRestProj04SendXMLResponseContentApplication.class, args);
 	}
 
 }

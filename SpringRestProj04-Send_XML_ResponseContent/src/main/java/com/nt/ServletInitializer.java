@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SpringRestProj03SendJsonResponseContentApplication.class);
+		return application.sources(SpringRestProj04SendXMLResponseContentApplication.class);
 	}
 
 }
