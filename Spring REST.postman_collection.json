@@ -1,0 +1,581 @@
+{
+	"info": {
+		"_postman_id": "416d5b48-5b44-43a3-9135-9990f6932379",
+		"name": "Spring REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4242749"
+	},
+	"item": [
+		{
+			"name": "SpringRestProj02-AllRequestModes-RESTAPI",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj02-AllRequestModes-RESTAPI",
+								"employee",
+								"api",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj02-AllRequestModes-RESTAPI",
+								"employee",
+								"api",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj02-AllRequestModes-RESTAPI",
+								"employee",
+								"api",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/updateEmail",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj02-AllRequestModes-RESTAPI",
+								"employee",
+								"api",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/updateEmail",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/updateEmail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj02-AllRequestModes-RESTAPI",
+								"employee",
+								"api",
+								"updateEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/delete",
+					"request": {
+						"method": "OPTIONS",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj02-AllRequestModes-RESTAPI",
+								"employee",
+								"api",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringRestProj01-FirstProviderApp",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringRestProj03-Send_JSON_ResponseContent",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj03-Send_JSON_ResponseContent/company/api/show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj03-Send_JSON_ResponseContent/company/api/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj03-Send_JSON_ResponseContent",
+								"company",
+								"api",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4040/RestApp03/company/api/show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/RestApp03/company/api/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"RestApp03",
+								"company",
+								"api",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4040/RestApp03/company/api/emp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4040/RestApp03/company/api/emp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4040",
+							"path": [
+								"RestApp03",
+								"company",
+								"api",
+								"emp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj03-Send_JSON_ResponseContent/company/api/emp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj03-Send_JSON_ResponseContent/company/api/emp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj03-Send_JSON_ResponseContent",
+								"company",
+								"api",
+								"emp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringRestProj04-Send_XML_ResponseContent",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/company",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj04-Send_XML_ResponseContent",
+								"operations",
+								"api",
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/company",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj04-Send_XML_ResponseContent",
+								"operations",
+								"api",
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj04-Send_XML_ResponseContent",
+								"operations",
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj04-Send_XML_ResponseContent",
+								"operations",
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"VMware\",\r\n    \"location\": \"Bengaluru\",\r\n    \"size\": 100,\r\n    \"turnOver\": 100000.0,\r\n    \"category\": \"IT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+								"operations",
+								"api",
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nazeer\",\r\n    \"hobbies\": [\r\n        \"cricket\",\r\n        \"TV\"\r\n    ],\r\n   \"holidaySpots\": [\r\n        \"Ooty\",\r\n        \"Kodaikanal\"\r\n    ],\r\n    \"languages\": [\r\n        \"Telugu\",\r\n        \"English\",\r\n        \"Hindi\"\r\n    ],\r\n    \"skillset\": {\r\n        \"java\": 1.8,\r\n        \"spring\": 5.0,\r\n        \"spring boot\": 2.7\r\n    },\r\n    \"vaccinated\": true,\r\n    \"company\": {\r\n        \"name\": \"VMware\",\r\n        \"location\": \"Bengaluru\",\r\n        \"size\": 1000,\r\n        \"turnOver\": 10000000.0,\r\n        \"category\": \"IT-Saas\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+								"operations",
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Company>\r\n    <name>HCL</name>\r\n    <location>Hyd</location>\r\n    <size>100</size>\r\n    <turnOver>5.0E10</turnOver>\r\n    <category>IT</category>\r\n</Company>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+								"operations",
+								"api",
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<Company>\r\n    <name>HCL</name>\r\n    <location>Hyd</location>\r\n    <size>100</size>\r\n    <turnOver>5.0E10</turnOver>\r\n    <category>IT</category>\r\n</Company>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+								"operations",
+								"api",
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<Employee>\r\n    <name>Nazeer</name>\r\n    <hobbies>\r\n        <hobbies>cricket</hobbies>\r\n        <hobbies>Movies</hobbies>\r\n    </hobbies>\r\n    <holidaySpots>\r\n        <holidaySpots>Ooty</holidaySpots>\r\n        <holidaySpots>Wayanad</holidaySpots>\r\n        <holidaySpots>Kanyakumari</holidaySpots>\r\n    </holidaySpots>\r\n    <languages>\r\n        <languages>Hindi</languages>\r\n        <languages>English</languages>\r\n        <languages>Telugu</languages>\r\n        <languages>Urdu</languages>\r\n    </languages>\r\n    <skillset>\r\n        <Java>8.0</Java>\r\n        <SpringBoot>2.7</SpringBoot>\r\n    </skillset>\r\n    <vaccinated>false</vaccinated>\r\n    <company>\r\n        <name>VMware</name>\r\n        <location>Hyd</location>\r\n        <size>100</size>\r\n        <turnOver>5.0E10</turnOver>\r\n        <category>IT</category>\r\n    </company>\r\n</Employee>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+								"operations",
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Employee>\r\n    <name>Nazeer</name>\r\n    <hobbies>\r\n        <hobbies>cricket</hobbies>\r\n        <hobbies>Movies</hobbies>\r\n    </hobbies>\r\n    <holidaySpots>\r\n        <holidaySpots>Ooty</holidaySpots>\r\n        <holidaySpots>Wayanad</holidaySpots>\r\n        <holidaySpots>Kanyakumari</holidaySpots>\r\n    </holidaySpots>\r\n    <languages>\r\n        <languages>Hindi</languages>\r\n        <languages>English</languages>\r\n        <languages>Telugu</languages>\r\n        <languages>Urdu</languages>\r\n    </languages>\r\n    <skillset>\r\n        <Java>8.0</Java>\r\n        <SpringBoot>2.7</SpringBoot>\r\n    </skillset>\r\n    <vaccinated>false</vaccinated>\r\n    <company>\r\n        <name>VMware</name>\r\n        <location>Hyd</location>\r\n        <size>100</size>\r\n        <turnOver>5.0E10</turnOver>\r\n        <category>IT</category>\r\n    </company>\r\n</Employee>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+								"operations",
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
