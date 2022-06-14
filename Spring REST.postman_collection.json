@@ -576,6 +576,84 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "SpringRestProj06-ConvertingJSONComplexDataIntoObject",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj06-ConvertingJSONComplexDataIntoObject/company/api/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\": \"VMware\",\r\n    \"establishedDate\": \"23-10-2000\",\r\n    \"establishedTime\": \"14:10:50\",\r\n    \"establishedOn\": \"23-10-2000 14:10:50\",\r\n    \"ongoingProjects\": [\r\n        {\r\n            \"projectName\": \"vSphere\",\r\n            \"durationInMonths\": 12,\r\n            \"teamSize\": 8\r\n        },\r\n        {\r\n            \"projectName\": \"vRealizeOperations\",\r\n            \"durationInMonths\": 12,\r\n            \"teamSize\": 8\r\n        },\r\n        {\r\n            \"projectName\": \"vCloudDirector\",\r\n            \"durationInMonths\": 12,\r\n            \"teamSize\": 8\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj06-ConvertingJSONComplexDataIntoObject/company/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj06-ConvertingJSONComplexDataIntoObject",
+								"company",
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj06-ConvertingXMLComplexDataIntoObject/company/api/register",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Company>\r\n    <companyName>VMware</companyName>\r\n    <establishedDate>23-10-2000</establishedDate>\r\n    <establishedTime>14:10:50</establishedTime>\r\n    <establishedOn>23-10-2000 14:10:50</establishedOn>\r\n    <ongoingProjects>\r\n        <ongoingProjects>\r\n            <projectName>vSphere</projectName>\r\n            <durationInMonths>12</durationInMonths>\r\n            <teamSize>8</teamSize>\r\n        </ongoingProjects>\r\n        <ongoingProjects>\r\n            <projectName>vRealizeOperations</projectName>\r\n            <durationInMonths>12</durationInMonths>\r\n            <teamSize>8</teamSize>\r\n        </ongoingProjects>\r\n        <ongoingProjects>\r\n            <projectName>vCloudDirector</projectName>\r\n            <durationInMonths>12</durationInMonths>\r\n            <teamSize>8</teamSize>\r\n        </ongoingProjects>\r\n    </ongoingProjects>\r\n</Company>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj06-ConvertingJSONComplexDataIntoObject/company/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj06-ConvertingJSONComplexDataIntoObject",
+								"company",
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
