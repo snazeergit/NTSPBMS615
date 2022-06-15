@@ -29,7 +29,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj02-AllRequestModes-RESTAPI",
+										"employee",
+										"api",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:18:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "@GetMapping-Fetching all employees"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/save",
@@ -51,7 +100,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/save",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj02-AllRequestModes-RESTAPI",
+										"employee",
+										"api",
+										"save"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:18:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "@PutMapping-Saving the employee"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/update",
@@ -73,7 +171,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj02-AllRequestModes-RESTAPI",
+										"employee",
+										"api",
+										"update"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "33"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:18:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "@PutMapping-Updating the employee"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/updateEmail",
@@ -95,7 +242,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/updateEmail",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj02-AllRequestModes-RESTAPI",
+										"employee",
+										"api",
+										"delete"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:18:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "@GetMapping-deleting employees"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/updateEmail",
@@ -117,7 +313,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/updateEmail",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/updateEmail",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj02-AllRequestModes-RESTAPI",
+										"employee",
+										"api",
+										"updateEmail"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:18:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "@PatchMapping-update employee email"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/delete",
@@ -139,7 +384,60 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/delete",
+							"originalRequest": {
+								"method": "OPTIONS",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj02-AllRequestModes-RESTAPI/employee/api/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj02-AllRequestModes-RESTAPI",
+										"employee",
+										"api",
+										"delete"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Allow",
+									"value": "DELETE,OPTIONS"
+								},
+								{
+									"key": "Accept-Patch",
+									"value": ""
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:19:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
 				}
 			]
 		},
@@ -150,9 +448,70 @@
 					"name": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj01-FirstProviderApp",
+								"messageapi",
+								"wish"
+							]
+						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj01-FirstProviderApp",
+										"messageapi",
+										"wish"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:21:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Good Night!"
+						}
+					]
 				}
 			]
 		},
@@ -179,7 +538,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj03-Send_JSON_ResponseContent/company/api/show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj03-Send_JSON_ResponseContent/company/api/show",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj03-Send_JSON_ResponseContent",
+										"company",
+										"api",
+										"show"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:14:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"HCL\",\n    \"location\": \"Hyd\",\n    \"size\": 100,\n    \"turnOver\": 50000000000,\n    \"category\": \"IT\"\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:4040/RestApp03/company/api/show",
@@ -201,7 +609,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:4040/RestApp03/company/api/show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4040/RestApp03/company/api/show",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4040",
+									"path": [
+										"RestApp03",
+										"company",
+										"api",
+										"show"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:15:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"HCL\",\n    \"location\": \"Hyd\",\n    \"size\": 100,\n    \"turnOver\": 50000000000,\n    \"category\": \"IT\"\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:4040/RestApp03/company/api/emp",
@@ -223,7 +680,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:4040/RestApp03/company/api/emp",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4040/RestApp03/company/api/emp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4040",
+									"path": [
+										"RestApp03",
+										"company",
+										"api",
+										"emp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:15:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Nazeer\",\n    \"hobbies\": [\n        \"cricket\",\n        \"Movies\"\n    ],\n    \"holidaySpots\": [\n        \"Ooty\",\n        \"Wayanad\",\n        \"Kanyakumari\"\n    ],\n    \"languages\": [\n        \"Urdu\",\n        \"Telugu\",\n        \"English\",\n        \"Hindi\"\n    ],\n    \"skillset\": {\n        \"Java\": 8,\n        \"SpringBoot\": 2.7\n    },\n    \"vaccinated\": false,\n    \"company\": {\n        \"name\": \"VMware\",\n        \"location\": \"Hyd\",\n        \"size\": 100,\n        \"turnOver\": 50000000000,\n        \"category\": \"IT\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj03-Send_JSON_ResponseContent/company/api/emp",
@@ -245,7 +751,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj03-Send_JSON_ResponseContent/company/api/emp",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj03-Send_JSON_ResponseContent/company/api/emp",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj03-Send_JSON_ResponseContent",
+										"company",
+										"api",
+										"emp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:14:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Nazeer\",\n    \"hobbies\": [\n        \"cricket\",\n        \"Movies\"\n    ],\n    \"holidaySpots\": [\n        \"Ooty\",\n        \"Wayanad\",\n        \"Kanyakumari\"\n    ],\n    \"languages\": [\n        \"Hindi\",\n        \"English\",\n        \"Telugu\",\n        \"Urdu\"\n    ],\n    \"skillset\": {\n        \"SpringBoot\": 2.7,\n        \"Java\": 8\n    },\n    \"vaccinated\": false,\n    \"company\": {\n        \"name\": \"VMware\",\n        \"location\": \"Hyd\",\n        \"size\": 100,\n        \"turnOver\": 50000000000,\n        \"category\": \"IT\"\n    }\n}"
+						}
+					]
 				}
 			]
 		},
@@ -272,7 +827,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/company",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/company",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj04-Send_XML_ResponseContent",
+										"operations",
+										"api",
+										"company"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:10:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"HCL\",\n    \"location\": \"Hyd\",\n    \"size\": 100,\n    \"turnOver\": 50000000000,\n    \"category\": \"IT\"\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/company",
@@ -305,7 +909,62 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/company",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/company",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj04-Send_XML_ResponseContent",
+										"operations",
+										"api",
+										"company"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:10:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "<Company>\n    <name>HCL</name>\n    <location>Hyd</location>\n    <size>100</size>\n    <turnOver>5.0E10</turnOver>\n    <category>IT</category>\n</Company>"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
@@ -327,7 +986,56 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj04-Send_XML_ResponseContent",
+										"operations",
+										"api",
+										"employee"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:10:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Nazeer\",\n    \"hobbies\": [\n        \"cricket\",\n        \"Movies\"\n    ],\n    \"holidaySpots\": [\n        \"Ooty\",\n        \"Wayanad\",\n        \"Kanyakumari\"\n    ],\n    \"languages\": [\n        \"Urdu\",\n        \"Telugu\",\n        \"English\",\n        \"Hindi\"\n    ],\n    \"skillset\": {\n        \"SpringBoot\": 2.7,\n        \"Java\": 8\n    },\n    \"vaccinated\": false,\n    \"company\": {\n        \"name\": \"VMware\",\n        \"location\": \"Hyd\",\n        \"size\": 100,\n        \"turnOver\": 50000000000,\n        \"category\": \"IT\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
@@ -360,7 +1068,62 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj04-Send_XML_ResponseContent/operations/api/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj04-Send_XML_ResponseContent",
+										"operations",
+										"api",
+										"employee"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:10:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "<Employee>\n    <name>Nazeer</name>\n    <hobbies>\n        <hobbies>cricket</hobbies>\n        <hobbies>Movies</hobbies>\n    </hobbies>\n    <holidaySpots>\n        <holidaySpots>Ooty</holidaySpots>\n        <holidaySpots>Wayanad</holidaySpots>\n        <holidaySpots>Kanyakumari</holidaySpots>\n    </holidaySpots>\n    <languages>\n        <languages>Urdu</languages>\n        <languages>Telugu</languages>\n        <languages>English</languages>\n        <languages>Hindi</languages>\n    </languages>\n    <skillset>\n        <SpringBoot>2.7</SpringBoot>\n        <Java>8.0</Java>\n    </skillset>\n    <vaccinated>false</vaccinated>\n    <company>\n        <name>VMware</name>\n        <location>Hyd</location>\n        <size>100</size>\n        <turnOver>5.0E10</turnOver>\n        <category>IT</category>\n    </company>\n</Employee>"
+						}
+					]
 				}
 			]
 		},
@@ -396,7 +1159,65 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"VMware\",\r\n    \"location\": \"Bengaluru\",\r\n    \"size\": 100,\r\n    \"turnOver\": 100000.0,\r\n    \"category\": \"IT\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+										"operations",
+										"api",
+										"company"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:01:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"VMware\",\n    \"location\": \"Bengaluru\",\n    \"size\": 100,\n    \"turnOver\": 100000,\n    \"category\": \"IT\"\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
@@ -427,7 +1248,65 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Nazeer\",\r\n    \"hobbies\": [\r\n        \"cricket\",\r\n        \"TV\"\r\n    ],\r\n   \"holidaySpots\": [\r\n        \"Ooty\",\r\n        \"Kodaikanal\"\r\n    ],\r\n    \"languages\": [\r\n        \"Telugu\",\r\n        \"English\",\r\n        \"Hindi\"\r\n    ],\r\n    \"skillset\": {\r\n        \"java\": 1.8,\r\n        \"spring\": 5.0,\r\n        \"spring boot\": 2.7\r\n    },\r\n    \"vaccinated\": true,\r\n    \"company\": {\r\n        \"name\": \"VMware\",\r\n        \"location\": \"Bengaluru\",\r\n        \"size\": 1000,\r\n        \"turnOver\": 10000000.0,\r\n        \"category\": \"IT-Saas\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+										"operations",
+										"api",
+										"employee"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:01:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Nazeer\",\n    \"hobbies\": [\n        \"cricket\",\n        \"TV\"\n    ],\n    \"holidaySpots\": [\n        \"Ooty\",\n        \"Kodaikanal\"\n    ],\n    \"languages\": [\n        \"Telugu\",\n        \"English\",\n        \"Hindi\"\n    ],\n    \"skillset\": {\n        \"java\": 1.8,\n        \"spring\": 5,\n        \"spring boot\": 2.7\n    },\n    \"vaccinated\": true,\n    \"company\": {\n        \"name\": \"VMware\",\n        \"location\": \"Bengaluru\",\n        \"size\": 1000,\n        \"turnOver\": 10000000,\n        \"category\": \"IT-Saas\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
@@ -469,7 +1348,71 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Company>\r\n    <name>HCL</name>\r\n    <location>Hyd</location>\r\n    <size>100</size>\r\n    <turnOver>5.0E10</turnOver>\r\n    <category>IT</category>\r\n</Company>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+										"operations",
+										"api",
+										"company"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:01:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "<Company>\n    <name>HCL</name>\n    <location>Hyd</location>\n    <size>100</size>\n    <turnOver>5.0E10</turnOver>\n    <category>IT</category>\n</Company>"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
@@ -500,7 +1443,65 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<Company>\r\n    <name>HCL</name>\r\n    <location>Hyd</location>\r\n    <size>100</size>\r\n    <turnOver>5.0E10</turnOver>\r\n    <category>IT</category>\r\n</Company>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/company",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+										"operations",
+										"api",
+										"company"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:01:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"HCL\",\n    \"location\": \"Hyd\",\n    \"size\": 100,\n    \"turnOver\": 50000000000,\n    \"category\": \"IT\"\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
@@ -531,7 +1532,65 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<Employee>\r\n    <name>Nazeer</name>\r\n    <hobbies>\r\n        <hobbies>cricket</hobbies>\r\n        <hobbies>Movies</hobbies>\r\n    </hobbies>\r\n    <holidaySpots>\r\n        <holidaySpots>Ooty</holidaySpots>\r\n        <holidaySpots>Wayanad</holidaySpots>\r\n        <holidaySpots>Kanyakumari</holidaySpots>\r\n    </holidaySpots>\r\n    <languages>\r\n        <languages>Hindi</languages>\r\n        <languages>English</languages>\r\n        <languages>Telugu</languages>\r\n        <languages>Urdu</languages>\r\n    </languages>\r\n    <skillset>\r\n        <Java>8.0</Java>\r\n        <SpringBoot>2.7</SpringBoot>\r\n    </skillset>\r\n    <vaccinated>false</vaccinated>\r\n    <company>\r\n        <name>VMware</name>\r\n        <location>Hyd</location>\r\n        <size>100</size>\r\n        <turnOver>5.0E10</turnOver>\r\n        <category>IT</category>\r\n    </company>\r\n</Employee>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+										"operations",
+										"api",
+										"employee"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:01:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Nazeer\",\n    \"hobbies\": [\n        \"cricket\",\n        \"Movies\"\n    ],\n    \"holidaySpots\": [\n        \"Ooty\",\n        \"Wayanad\",\n        \"Kanyakumari\"\n    ],\n    \"languages\": [\n        \"English\",\n        \"Telugu\",\n        \"Urdu\",\n        \"Hindi\"\n    ],\n    \"skillset\": {\n        \"Java\": 8,\n        \"SpringBoot\": 2.7\n    },\n    \"vaccinated\": false,\n    \"company\": {\n        \"name\": \"VMware\",\n        \"location\": \"Hyd\",\n        \"size\": 100,\n        \"turnOver\": 50000000000,\n        \"category\": \"IT\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
@@ -573,7 +1632,71 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Employee>\r\n    <name>Nazeer</name>\r\n    <hobbies>\r\n        <hobbies>cricket</hobbies>\r\n        <hobbies>Movies</hobbies>\r\n    </hobbies>\r\n    <holidaySpots>\r\n        <holidaySpots>Ooty</holidaySpots>\r\n        <holidaySpots>Wayanad</holidaySpots>\r\n        <holidaySpots>Kanyakumari</holidaySpots>\r\n    </holidaySpots>\r\n    <languages>\r\n        <languages>Hindi</languages>\r\n        <languages>English</languages>\r\n        <languages>Telugu</languages>\r\n        <languages>Urdu</languages>\r\n    </languages>\r\n    <skillset>\r\n        <Java>8.0</Java>\r\n        <SpringBoot>2.7</SpringBoot>\r\n    </skillset>\r\n    <vaccinated>false</vaccinated>\r\n    <company>\r\n        <name>VMware</name>\r\n        <location>Hyd</location>\r\n        <size>100</size>\r\n        <turnOver>5.0E10</turnOver>\r\n        <category>IT</category>\r\n    </company>\r\n</Employee>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject/operations/api/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj05-MediaTypeAnnotations-JSON-XMLToObject",
+										"operations",
+										"api",
+										"employee"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:01:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "<Employee>\n    <name>Nazeer</name>\n    <hobbies>\n        <hobbies>cricket</hobbies>\n        <hobbies>Movies</hobbies>\n    </hobbies>\n    <holidaySpots>\n        <holidaySpots>Ooty</holidaySpots>\n        <holidaySpots>Wayanad</holidaySpots>\n        <holidaySpots>Kanyakumari</holidaySpots>\n    </holidaySpots>\n    <languages>\n        <languages>English</languages>\n        <languages>Telugu</languages>\n        <languages>Urdu</languages>\n        <languages>Hindi</languages>\n    </languages>\n    <skillset>\n        <Java>8.0</Java>\n        <SpringBoot>2.7</SpringBoot>\n    </skillset>\n    <vaccinated>false</vaccinated>\n    <company>\n        <name>VMware</name>\n        <location>Hyd</location>\n        <size>100</size>\n        <turnOver>5.0E10</turnOver>\n        <category>IT</category>\n    </company>\n</Employee>"
+						}
+					]
 				}
 			]
 		},
@@ -609,7 +1732,65 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj06-ConvertingJSONComplexDataIntoObject/company/api/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"companyName\": \"VMware\",\r\n    \"establishedDate\": \"23-10-2000\",\r\n    \"establishedTime\": \"14:10:50\",\r\n    \"establishedOn\": \"23-10-2000 14:10:50\",\r\n    \"ongoingProjects\": [\r\n        {\r\n            \"projectName\": \"vSphere\",\r\n            \"durationInMonths\": 12,\r\n            \"teamSize\": 8\r\n        },\r\n        {\r\n            \"projectName\": \"vRealizeOperations\",\r\n            \"durationInMonths\": 12,\r\n            \"teamSize\": 8\r\n        },\r\n        {\r\n            \"projectName\": \"vCloudDirector\",\r\n            \"durationInMonths\": 12,\r\n            \"teamSize\": 8\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj06-ConvertingJSONComplexDataIntoObject/company/api/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj06-ConvertingJSONComplexDataIntoObject",
+										"company",
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:59:35 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"companyName\": \"VMware\",\n    \"establishedDate\": \"23-10-2000\",\n    \"establishedTime\": \"14:10:50\",\n    \"establishedOn\": \"23-10-2000 14:10:50\",\n    \"ongoingProjects\": [\n        {\n            \"projectName\": \"vSphere\",\n            \"durationInMonths\": 12,\n            \"teamSize\": 8\n        },\n        {\n            \"projectName\": \"vRealizeOperations\",\n            \"durationInMonths\": 12,\n            \"teamSize\": 8\n        },\n        {\n            \"projectName\": \"vCloudDirector\",\n            \"durationInMonths\": 12,\n            \"teamSize\": 8\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "http://localhost:2020/SpringRestProj06-ConvertingXMLComplexDataIntoObject/company/api/register",
@@ -651,7 +1832,958 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj06-ConvertingXMLComplexDataIntoObject/company/api/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<Company>\r\n    <companyName>VMware</companyName>\r\n    <establishedDate>23-10-2000</establishedDate>\r\n    <establishedTime>14:10:50</establishedTime>\r\n    <establishedOn>23-10-2000 14:10:50</establishedOn>\r\n    <ongoingProjects>\r\n        <ongoingProjects>\r\n            <projectName>vSphere</projectName>\r\n            <durationInMonths>12</durationInMonths>\r\n            <teamSize>8</teamSize>\r\n        </ongoingProjects>\r\n        <ongoingProjects>\r\n            <projectName>vRealizeOperations</projectName>\r\n            <durationInMonths>12</durationInMonths>\r\n            <teamSize>8</teamSize>\r\n        </ongoingProjects>\r\n        <ongoingProjects>\r\n            <projectName>vCloudDirector</projectName>\r\n            <durationInMonths>12</durationInMonths>\r\n            <teamSize>8</teamSize>\r\n        </ongoingProjects>\r\n    </ongoingProjects>\r\n</Company>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj06-ConvertingJSONComplexDataIntoObject/company/api/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj06-ConvertingJSONComplexDataIntoObject",
+										"company",
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "xml",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/xml;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:59:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "<Company>\n    <companyName>VMware</companyName>\n    <establishedDate>23-10-2000</establishedDate>\n    <establishedTime>14:10:50</establishedTime>\n    <establishedOn>23-10-2000 14:10:50</establishedOn>\n    <ongoingProjects>\n        <ongoingProjects>\n            <projectName>vSphere</projectName>\n            <durationInMonths>12</durationInMonths>\n            <teamSize>8</teamSize>\n        </ongoingProjects>\n        <ongoingProjects>\n            <projectName>vRealizeOperations</projectName>\n            <durationInMonths>12</durationInMonths>\n            <teamSize>8</teamSize>\n        </ongoingProjects>\n        <ongoingProjects>\n            <projectName>vCloudDirector</projectName>\n            <durationInMonths>12</durationInMonths>\n            <teamSize>8</teamSize>\n        </ongoingProjects>\n    </ongoingProjects>\n</Company>"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SpringRestProj07-SendingDataAsRequestParams",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report?sno=1234&sname=Nazeer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report?sno=1234&sname=Nazeer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report"
+							],
+							"query": [
+								{
+									"key": "sno",
+									"value": "1234"
+								},
+								{
+									"key": "sname",
+									"value": "Nazeer"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report?sno=1234&sname=Nazeer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report?sno=1234&sname=Nazeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report"
+									],
+									"query": [
+										{
+											"key": "sno",
+											"value": "1234"
+										},
+										{
+											"key": "sname",
+											"value": "Nazeer"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:31:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "1234  Nazeer"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report?sno=1234&sname=Nazeer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report?sname=Nazeer&sno=1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report"
+							],
+							"query": [
+								{
+									"key": "sname",
+									"value": "Nazeer"
+								},
+								{
+									"key": "sno",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report?sno=1234&sname=Nazeer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report?sname=Nazeer&sno=1234",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report"
+									],
+									"query": [
+										{
+											"key": "sname",
+											"value": "Nazeer"
+										},
+										{
+											"key": "sno",
+											"value": "1234"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:32:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "1234  Nazeer"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sname=Nazeer&sno=1234",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report1"
+							],
+							"query": [
+								{
+									"key": "sno",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sname=Nazeer&sno=1234",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report1"
+									],
+									"query": [
+										{
+											"key": "sno",
+											"value": "1234"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:38:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "1234  null"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234&sname=Nazeer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report1"
+							],
+							"query": [
+								{
+									"key": "sno",
+									"value": "1234"
+								},
+								{
+									"key": "sname",
+									"value": "Nazeer"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234&sname=Nazeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report1"
+									],
+									"query": [
+										{
+											"key": "sno",
+											"value": "1234"
+										},
+										{
+											"key": "sname",
+											"value": "Nazeer"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:41:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "1234  Nazeer"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234&name=Nazeer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234&name=Nazeer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report1"
+							],
+							"query": [
+								{
+									"key": "sno",
+									"value": "1234"
+								},
+								{
+									"key": "name",
+									"value": "Nazeer"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234&name=Nazeer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report1?sno=1234&name=Nazeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report1"
+									],
+									"query": [
+										{
+											"key": "sno",
+											"value": "1234"
+										},
+										{
+											"key": "name",
+											"value": "Nazeer"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:41:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "1234  null"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&sname=Nazeer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&sname=Nazeer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report2"
+							],
+							"query": [
+								{
+									"key": "sno",
+									"value": "1234"
+								},
+								{
+									"key": "sname",
+									"value": "Nazeer"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&sname=Nazeer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&sname=Nazeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report2"
+									],
+									"query": [
+										{
+											"key": "sno",
+											"value": "1234"
+										},
+										{
+											"key": "sname",
+											"value": "Nazeer"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:42:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "1234  Nazeer"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&sname=Nazeer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?no=1234&name=Nazeer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report2"
+							],
+							"query": [
+								{
+									"key": "no",
+									"value": "1234"
+								},
+								{
+									"key": "name",
+									"value": "Nazeer"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&sname=Nazeer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?no=1234&name=Nazeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report2"
+									],
+									"query": [
+										{
+											"key": "no",
+											"value": "1234"
+										},
+										{
+											"key": "name",
+											"value": "Nazeer"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:44:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "null  null"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:48:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "null  null"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?no=1234&sname=Nazeer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?no=1234&sname=Nazeer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report2"
+							],
+							"query": [
+								{
+									"key": "no",
+									"value": "1234"
+								},
+								{
+									"key": "sname",
+									"value": "Nazeer"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?no=1234&sname=Nazeer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?no=1234&sname=Nazeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report2"
+									],
+									"query": [
+										{
+											"key": "no",
+											"value": "1234"
+										},
+										{
+											"key": "sname",
+											"value": "Nazeer"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:49:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "null  Nazeer"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&name=Nazeer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&name=Nazeer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report2"
+							],
+							"query": [
+								{
+									"key": "sno",
+									"value": "1234"
+								},
+								{
+									"key": "name",
+									"value": "Nazeer"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&name=Nazeer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report2?sno=1234&name=Nazeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report2"
+									],
+									"query": [
+										{
+											"key": "sno",
+											"value": "1234"
+										},
+										{
+											"key": "name",
+											"value": "Nazeer"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 17:50:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "1234  null"
+						}
+					]
 				}
 			]
 		}
