@@ -2784,6 +2784,97 @@
 							"body": "1234  null"
 						}
 					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report3?sno=1234&name=Nazeer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report3?sno=1234&sname=Nazeer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj07-SendingDataAsRequestParams",
+								"customer",
+								"api",
+								"report3"
+							],
+							"query": [
+								{
+									"key": "sno",
+									"value": "1234"
+								},
+								{
+									"key": "sname",
+									"value": "Nazeer"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report3?sno=1234&name=Nazeer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj07-SendingDataAsRequestParams/customer/api/report3?sno=1234&sname=Nazeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj07-SendingDataAsRequestParams",
+										"customer",
+										"api",
+										"report3"
+									],
+									"query": [
+										{
+											"key": "sno",
+											"value": "1234"
+										},
+										{
+											"key": "sname",
+											"value": "Nazeer"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 19:16:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "1234  Nazeer"
+						}
+					]
 				}
 			]
 		}
