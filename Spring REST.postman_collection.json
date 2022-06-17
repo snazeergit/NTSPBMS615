@@ -2885,23 +2885,7 @@
 					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/Nazeer",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/Nazeer",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "2020",
-							"path": [
-								"SpringRestProj08-SendingDataAsPathVariables",
-								"emp",
-								"api",
-								"show",
-								"100",
-								"Nazeer"
-							]
-						}
+						"header": []
 					},
 					"response": [
 						{
@@ -2936,11 +2920,11 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "15"
+									"value": "38"
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 16 Jun 2022 17:36:57 GMT"
+									"value": "Fri, 17 Jun 2022 16:28:00 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -2952,7 +2936,408 @@
 								}
 							],
 							"cookie": [],
-							"body": "100<---->Nazeer"
+							"body": "method with path : /show/{eno}/{ename}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/ename",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/ename",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/ename",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj08-SendingDataAsPathVariables",
+										"emp",
+										"api",
+										"show",
+										"100",
+										"ename"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Jun 2022 16:29:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "method with path : /show/{eno}/ename"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/eno/Nazeer",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/eno/Nazeer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/eno/Nazeer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj08-SendingDataAsPathVariables",
+										"emp",
+										"api",
+										"show",
+										"eno",
+										"Nazeer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Jun 2022 16:29:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "method with path : /show/eno/{ename}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/eno/ename",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/eno/ename",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/eno/ename",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj08-SendingDataAsPathVariables",
+										"emp",
+										"api",
+										"show",
+										"eno",
+										"ename"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Jun 2022 16:30:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "method with path : /show/eno/ename"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100a/ename",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100a/ename",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100a/ename",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj08-SendingDataAsPathVariables",
+										"emp",
+										"api",
+										"show",
+										"100a",
+										"ename"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Jun 2022 16:30:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2022-06-17T16:30:50.158+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100a/ename\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/101",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/101",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/101",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj08-SendingDataAsPathVariables",
+										"emp",
+										"api",
+										"show",
+										"100",
+										"101"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "38"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Jun 2022 16:31:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "method with path : /show/{eno}/{ename}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/no/ename",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/no/ename",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj08-SendingDataAsPathVariables",
+										"emp",
+										"api",
+										"show",
+										"no",
+										"ename"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Jun 2022 16:31:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2022-06-17T16:31:51.459+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/no/ename\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/ename/eno",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/ename/eno",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/ename/eno",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj08-SendingDataAsPathVariables",
+										"emp",
+										"api",
+										"show",
+										"ename",
+										"eno"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 Jun 2022 16:32:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2022-06-17T16:32:28.408+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/ename/eno\"\n}"
 						}
 					]
 				},
@@ -2964,7 +3349,7 @@
 					},
 					"response": [
 						{
-							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/Nazeer/Hyd",
+							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/Nazeer",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -3012,7 +3397,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 16 Jun 2022 17:38:44 GMT"
+									"value": "Fri, 17 Jun 2022 16:33:09 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -3024,39 +3409,24 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"timestamp\": \"2022-06-16T17:38:44.500+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/Nazeer/Hyd\"\n}"
+							"body": "{\n    \"timestamp\": \"2022-06-17T16:33:09.940+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/Nazeer/Hyd\"\n}"
 						}
 					]
 				},
 				{
-					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100",
+					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "2020",
-							"path": [
-								"SpringRestProj08-SendingDataAsPathVariables",
-								"emp",
-								"api",
-								"show",
-								"100"
-							]
-						}
+						"header": []
 					},
 					"response": [
 						{
-							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100",
+							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100",
+									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -3067,7 +3437,8 @@
 										"emp",
 										"api",
 										"show",
-										"100"
+										"100",
+										""
 									]
 								}
 							},
@@ -3097,7 +3468,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 16 Jun 2022 17:39:10 GMT"
+									"value": "Fri, 17 Jun 2022 16:33:37 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -3109,7 +3480,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"timestamp\": \"2022-06-16T17:39:10.670+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100\"\n}"
+							"body": "{\n    \"timestamp\": \"2022-06-17T16:33:37.172+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/100/\"\n}"
 						}
 					]
 				},
@@ -3117,22 +3488,7 @@
 					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/Nazeer",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/Nazeer",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "2020",
-							"path": [
-								"SpringRestProj08-SendingDataAsPathVariables",
-								"emp",
-								"api",
-								"show",
-								"Nazeer"
-							]
-						}
+						"header": []
 					},
 					"response": [
 						{
@@ -3182,7 +3538,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 16 Jun 2022 17:39:37 GMT"
+									"value": "Fri, 17 Jun 2022 16:33:59 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -3194,148 +3550,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"timestamp\": \"2022-06-16T17:39:37.696+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/Nazeer\"\n}"
-						}
-					]
-				},
-				{
-					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/Nazeer/100",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/Nazeer/100",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "2020",
-							"path": [
-								"SpringRestProj08-SendingDataAsPathVariables",
-								"emp",
-								"api",
-								"show",
-								"Nazeer",
-								"100"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/Nazeer/100",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/Nazeer/100",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "2020",
-									"path": [
-										"SpringRestProj08-SendingDataAsPathVariables",
-										"emp",
-										"api",
-										"show",
-										"Nazeer",
-										"100"
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 16 Jun 2022 17:40:11 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "close"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"timestamp\": \"2022-06-16T17:40:11.837+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/Nazeer/100\"\n}"
-						}
-					]
-				},
-				{
-					"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/",
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": [
-						{
-							"name": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:2020/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "2020",
-									"path": [
-										"SpringRestProj08-SendingDataAsPathVariables",
-										"emp",
-										"api",
-										"show",
-										""
-									]
-								}
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Vary",
-									"value": "Access-Control-Request-Method"
-								},
-								{
-									"key": "Vary",
-									"value": "Access-Control-Request-Headers"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 16 Jun 2022 17:41:18 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=20"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"timestamp\": \"2022-06-16T17:41:18.449+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/\"\n}"
+							"body": "{\n    \"timestamp\": \"2022-06-17T16:33:59.880+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/SpringRestProj08-SendingDataAsPathVariables/emp/api/show/Nazeer\"\n}"
 						}
 					]
 				}
