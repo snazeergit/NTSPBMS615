@@ -3555,6 +3555,1421 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "SpringRestProj09-MiniProjectAsLayeredApp",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"actorName\": \"Kamal\",\r\n    \"category\": \"HERO\",\r\n    \"mobileNo\": 7829930782\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj09-MiniProjectAsLayeredApp",
+								"actor",
+								"api",
+								"save"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/save",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"actorName\": \"RK\",\r\n    \"category\": \"HERO\",\r\n    \"mobileNo\": 7829930782\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"save"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Jun 2022 13:44:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Actor is registered with ID value : 1"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj09-MiniProjectAsLayeredApp",
+								"actor",
+								"api",
+								"getAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"getAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Jun 2022 17:34:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"actorId\": 1,\n        \"actorName\": \"RK\",\n        \"category\": \"HERO\",\n        \"mobileNo\": 7829930782\n    },\n    {\n        \"actorId\": 2,\n        \"actorName\": \"PK\",\n        \"category\": \"HERO\",\n        \"mobileNo\": 928472322\n    },\n    {\n        \"actorId\": 3,\n        \"actorName\": \"JK\",\n        \"category\": \"Tyres\",\n        \"mobileNo\": 828472322\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/get/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/get/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj09-MiniProjectAsLayeredApp",
+								"actor",
+								"api",
+								"get",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/get/3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/get/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"get",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Jun 2022 17:50:25 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"actorId\": 3,\n    \"actorName\": \"JK\",\n    \"category\": \"Tyres\",\n    \"mobileNo\": 828472322\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getAll/sort",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getAll/sort",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj09-MiniProjectAsLayeredApp",
+								"actor",
+								"api",
+								"getAll",
+								"sort"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getAll/sort",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getAll/sort",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"getAll",
+										"sort"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Jun 2022 18:01:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"actorId\": 2,\n        \"actorName\": \"AD\",\n        \"category\": \"HERO\",\n        \"mobileNo\": 928472322\n    },\n    {\n        \"actorId\": 3,\n        \"actorName\": \"BK\",\n        \"category\": \"Tyres\",\n        \"mobileNo\": 828472322\n    },\n    {\n        \"actorId\": 1,\n        \"actorName\": \"DK\",\n        \"category\": \"HERO\",\n        \"mobileNo\": 7829930782\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getActor/HERO/VILLAIN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getActor/HERO/VILLAIN",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj09-MiniProjectAsLayeredApp",
+								"actor",
+								"api",
+								"getActor",
+								"HERO",
+								"VILLAIN"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/update",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/getActor/HERO/VILLAIN",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"getActor",
+										"HERO",
+										"VILLAIN"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 18:59:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"actorId\": 1,\n        \"actorName\": \"DK\",\n        \"category\": \"HERO\",\n        \"mobileNo\": 7829930782\n    },\n    {\n        \"actorId\": 2,\n        \"actorName\": \"AD\",\n        \"category\": \"HERO\",\n        \"mobileNo\": 928472322\n    },\n    {\n        \"actorId\": 4,\n        \"actorName\": \"Nazeer\",\n        \"category\": \"VILLAIN\",\n        \"mobileNo\": 8933938292\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updateActor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"actorId\":1,\r\n    \"actorName\":\"Nazeer\",\r\n    \"category\":\"SuperHero\",\r\n    \"mobileNo\":123456789\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updateActor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj09-MiniProjectAsLayeredApp",
+								"actor",
+								"api",
+								"updateActor"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updateActor",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"actorId\":1,\r\n    \"actorName\":\"Nazeer\",\r\n    \"category\":\"SuperHero\",\r\n    \"mobileNo\":123456789\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updateActor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"updateActor"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 19:03:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Actor record updated"
+						},
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updateActor",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"actorId\":11,\r\n    \"actorName\":\"Nazeer\",\r\n    \"category\":\"SuperHero\",\r\n    \"mobileNo\":123456789\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updateActor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"updateActor"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 19:03:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "No actor is available with id 11 provided"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/deleteActor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/deleteActor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj09-MiniProjectAsLayeredApp",
+								"actor",
+								"api",
+								"deleteActor"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updateActor",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/deleteActor/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"deleteActor",
+										"2"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 19:05:10 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Actor with id 2 is deleted"
+						},
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updateActor",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/deleteActor/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"deleteActor",
+										"2"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 19:05:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "No actor is available with id 2 provided"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updatemobileNo/3/777888999",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updatemobileNo/3/777888999",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj09-MiniProjectAsLayeredApp",
+								"actor",
+								"api",
+								"updatemobileNo",
+								"3",
+								"777888999"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updatemobileNo/13/777888999",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updatemobileNo/3/777888999",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"updatemobileNo",
+										"3",
+										"777888999"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "32"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 19:08:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Actor's mobile number is updated"
+						},
+						{
+							"name": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updatemobileNo/3/777888999",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj09-MiniProjectAsLayeredApp/actor/api/updatemobileNo/13/777888999",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj09-MiniProjectAsLayeredApp",
+										"actor",
+										"api",
+										"updatemobileNo",
+										"13",
+										"777888999"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 24 Jun 2022 19:08:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "No actor is available with id 13 provided"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice/actor/api/get/77",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice/actor/api/get/77",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice",
+								"actor",
+								"api",
+								"get",
+								"77"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice/actor/api/get/77",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice",
+										"actor",
+										"api",
+										"get",
+										"77"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jun 2022 11:43:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"time\": \"2022-06-25T17:13:18.7616394\",\n    \"status\": \"500\",\n    \"message\": \"No actor available with given Id\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice/actor/api/get/7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice/actor/api/get/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice",
+								"actor",
+								"api",
+								"get",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice/actor/api/get/7",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice/actor/api/get/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice",
+										"actor",
+										"api",
+										"get",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 25 Jun 2022 11:44:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"actorId\": 7,\n    \"actorName\": \"Kamal\",\n    \"category\": \"HERO\",\n    \"mobileNo\": 7829930782\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empNo\":1234,\r\n    \"empName\":\"Nazeer\",\r\n    \"empLocation\":\"Nellore\",\r\n    \"empSkillSet\":\"Java\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+								"emp",
+								"api",
+								"post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"empNo\":1234,\r\n    \"empName\":\"Nazeer\",\r\n    \"empLocation\":\"Nellore\",\r\n    \"empSkillSet\":\"Java\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/post",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+										"emp",
+										"api",
+										"post"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 18:59:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ldt\": \"2022-06-29T00:29:23.7040687\",\n    \"status\": \"500\",\n    \"message\": \"could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement\"\n}"
+						},
+						{
+							"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/post",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"empNo\":1234,\r\n    \"empName\":\"Nazeer\",\r\n    \"empLocation\":\"Nellore\",\r\n    \"empSkillSet\":\"Java\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/post",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+										"emp",
+										"api",
+										"post"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "24"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 19:03:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Employee record saved..."
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/get/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+								"emp",
+								"api",
+								"get",
+								"17"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/get/17",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/get/17",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+										"emp",
+										"api",
+										"get",
+										"17"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 19:07:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ldt\": \"2022-06-29T00:37:01.8635331\",\n    \"status\": \"500\",\n    \"message\": \"Employee with given id is not found...\"\n}"
+						},
+						{
+							"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/get",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/get/25",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+										"emp",
+										"api",
+										"get",
+										"25"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 19:07:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"empNo\": 25,\n    \"empName\": \"Nazeer\",\n    \"empLocation\": \"Nellore\",\n    \"empSkillSet\": \"Java\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empNo\":25,\r\n    \"empName\":\"Nazeer\",\r\n    \"empLocation\":\"Banglore\",\r\n    \"empSkillSet\":\"SpringBoot\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/put",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+								"emp",
+								"api",
+								"put"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"empNo\":25,\r\n    \"empName\":\"Nazeer\",\r\n    \"empLocation\":\"Banglore\",\r\n    \"empSkillSet\":\"SpringBoot\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/put",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+										"emp",
+										"api",
+										"put"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 19:22:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Employee details updated.."
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/patch/27/Chennai",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+								"emp",
+								"api",
+								"patch",
+								"27",
+								"Chennai"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/patch",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/patch/27/Chennai",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+										"emp",
+										"api",
+										"patch",
+										"27",
+										"Chennai"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "25"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 19:53:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Employee Location updated"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/delete/26",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/delete/26",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+								"emp",
+								"api",
+								"delete",
+								"26"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/delete/26",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee/emp/api/delete/26",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee",
+										"emp",
+										"api",
+										"delete",
+										"26"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "23"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 19:58:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Employee record deleted"
+						}
+					]
+				}
+			]
 		}
 	]
 }
