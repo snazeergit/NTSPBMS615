@@ -3,11 +3,9 @@ package com.nt.service;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-import org.aspectj.apache.bcel.classfile.Module.Open;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,7 +33,7 @@ public class ActorMgmtServiceImpl implements IActorMgmtService {
 
 	@Override
 	public Actor getActorById(Integer id) {
-		return actorRepo.findById(id).orElseThrow(()->new IllegalArgumentException("No actor available with given Id"));
+		return actorRepo.findById(id).orElseThrow(()->new IllegalArgumentException("No actor available with given Id : "+id));
 	}
 
 	@Override //Sorting using list
@@ -76,7 +74,7 @@ public class ActorMgmtServiceImpl implements IActorMgmtService {
 			actorRepo.save(actor);
 			return "Actor record updated";
 		} else {
-			throw new ActorNotFoundException("No actor is available with id " + actorId + " provided");
+			throw new ActorNotFoundException("No actor is available with given id " + actorId);
 		}
 	}
 
@@ -88,7 +86,7 @@ public class ActorMgmtServiceImpl implements IActorMgmtService {
 			actorRepo.delete(actor);
 			return "Actor with id " + id + " is deleted";
 		} else {
-			throw new ActorNotFoundException("No actor is available with id " + id + " provided");
+			throw new ActorNotFoundException("No actor is available with given id " + id);
 		}
 	}
 
@@ -100,7 +98,7 @@ public class ActorMgmtServiceImpl implements IActorMgmtService {
 			actor.setMobileNo(newMobileNo);
 			return "Actor's mobile number is updated";
 		} else {
-			throw new ActorNotFoundException("No actor is available with id " + id + " provided");
+			throw new ActorNotFoundException("No actor is available with given id " + id);
 		}
 	}
 
