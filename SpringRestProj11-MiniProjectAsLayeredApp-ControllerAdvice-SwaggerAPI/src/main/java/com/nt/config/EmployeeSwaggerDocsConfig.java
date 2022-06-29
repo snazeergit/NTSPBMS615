@@ -28,7 +28,7 @@ public class EmployeeSwaggerDocsConfig {
 
 	private ApiInfo getApiInfo() {
 		Contact contact = new Contact("Nazeer", "https://www.KRTile.com", "krtiles@gmail.com");
-		return new ApiInfo("EmployeeAPI", "Provides CURD operations on Employee", "1.0.RELEASE", "http://KRTiles.com",
+		return new ApiInfo("Employee Swagger API", "Provides CURD operations on Employee", "1.0-RELEASE", "http://KRTiles.com",
 				contact, "GNU Public", "https:/KRTiles.com/lisence/gnu", Collections.emptyList());
 	}
 
