@@ -23,7 +23,7 @@ public class EmployeeOperationsController {
 	@PostMapping("/save")
 	public ResponseEntity<String> saveEmpoyee() {
 		System.out.println("EmployeeOperationsController.saveEmpoyee()");
-		return new ResponseEntity<String>("@PutMapping-Saving the employee", HttpStatus.CREATED);
+		return new ResponseEntity<String>("@PostMapping-Saving the employee", HttpStatus.CREATED);
 	}
 
 	@PutMapping("/update")
@@ -41,6 +41,6 @@ public class EmployeeOperationsController {
 	@DeleteMapping("/delete")
 	public ResponseEntity<String> deleteEmpoyee() {
 		System.out.println("EmployeeOperationsController.deleteEmpoyee()");
-		return new ResponseEntity<String>("@GetMapping-deleting employees", HttpStatus.OK);
+		return new ResponseEntity<String>("@DeleteMapping-deleting employees", HttpStatus.OK);
 	}
 }

@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
+import org.springframework.context.annotation.Scope;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;
