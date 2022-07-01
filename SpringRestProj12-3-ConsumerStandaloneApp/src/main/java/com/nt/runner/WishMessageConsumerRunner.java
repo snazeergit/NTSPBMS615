@@ -12,20 +12,24 @@ public class WishMessageConsumerRunner implements CommandLineRunner {
 
 	@Autowired
 	private RestTemplate template;
-	
-	@Value("${service.url}")//from properties file
+
+	@Value("${service.url}") //from properties file
 	private String serviceUrl;
-	
+
 	@Override
 	public void run(String... args) throws Exception {
-		//consume the service using xxxFOrEntity(-) method
+		//consume the service using xxxForEntity(-) method
 		ResponseEntity<String> response = template.getForEntity(serviceUrl, String.class);
-		
+
 		//process response
-		System.out.println("Response Body: "+response.getBody());
-		System.out.println("Response Status code: "+response.getStatusCodeValue());
-		System.out.println("Response Code: "+response.getStatusCode());
-		System.out.println("Response Headers: "+response.getHeaders());
+		System.out.println("Response Body: " + response.getBody());
+		System.out.println("Response Status code: " + response.getStatusCodeValue());
+		System.out.println("Response Code: " + response.getStatusCode());
+		System.out.println("Response Headers: " + response.getHeaders());
+		System.out.println("-------------------------------------------------");
+		//consume the service using xxxForObject(-) method
+		String response1 = template.getForObject(serviceUrl, String.class);
+		System.out.println("Response : " + response1);
 	}
 
 }

@@ -20,6 +20,10 @@ public class WishMessageConsumerRunner implements CommandLineRunner {
 		System.out.println("Response Body: " + response.getBody());
 		System.out.println("Response Code: " + response.getStatusCode());
 		System.out.println("Response Headers: " + response.getHeaders());
+		System.out.println("-------------------------------------------------");
+		//consume the service using xxxForObject(-) method
+		String response1 = template.getForObject(serviceUrl, String.class);
+		System.out.println("Response : " + response1);
 	}
 
 }
