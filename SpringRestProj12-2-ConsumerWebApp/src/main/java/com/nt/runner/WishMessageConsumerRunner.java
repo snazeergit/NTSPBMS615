@@ -1,7 +1,6 @@
 package com.nt.runner;
 
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.autoconfigure.template.TemplateAvailabilityProviders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -12,15 +11,15 @@ public class WishMessageConsumerRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		//Create RestTemplate object
-		RestTemplate template =new RestTemplate();
+		RestTemplate template = new RestTemplate();
 		//Prepare service/base url
-		String serviceUrl="http://localhost:2020/SpringRestProj12-1-ProviderApp/wish/api/message";
-//consume the service using xxxFOrEntity(-) method
+		String serviceUrl = "http://localhost:2020/SpringRestProj12-1-ProviderApp/wish/api/message";
+		//consume the service using xxxFOrEntity(-) method
 		ResponseEntity<String> response = template.getForEntity(serviceUrl, String.class);
 		//process response
-		System.out.println("Response Body: "+response.getBody());
-		System.out.println("Response Code: "+response.getStatusCode());
-		System.out.println("Response Headers: "+response.getHeaders());
+		System.out.println("Response Body: " + response.getBody());
+		System.out.println("Response Code: " + response.getStatusCode());
+		System.out.println("Response Headers: " + response.getHeaders());
 	}
 
 }
