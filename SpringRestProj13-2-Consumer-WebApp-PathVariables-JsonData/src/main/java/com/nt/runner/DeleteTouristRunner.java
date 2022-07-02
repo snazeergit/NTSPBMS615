@@ -26,3 +26,9 @@ public class DeleteTouristRunner implements CommandLineRunner {
 	}
 
 }
+/*Runners in Spring boot application executes only when we run the application as the "Spring Boot App" or the "Java Application".
+If run the application as "Run on Server" then Runners will not be executed so you will get output.
+
+When you have multiple runners in the application then make sure all the runner are working correctly else you will encounter 405 error.
+It usually happens when copy past the code and runners will have old provider application urls. So as soon as you copy the consumer application
+make sure you change the provider url or service url in all the runner applications*/
