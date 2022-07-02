@@ -24,6 +24,7 @@ public class TouristConsumerPostRunner implements CommandLineRunner {
 
 		//Using postForEntity()
 		ResponseEntity<String> responseEntity = template.postForEntity(serviceUrl, httpEntity, String.class);
+		System.out.println("_____________Post______________");
 		System.out.println("Consumer-postForEntity(): ");
 		System.out.println("Body : " + responseEntity.getBody());
 		System.out.println("Status Code Value : " + responseEntity.getStatusCodeValue());
@@ -35,6 +36,7 @@ public class TouristConsumerPostRunner implements CommandLineRunner {
 		String response = template.postForObject(serviceUrl, httpEntity, String.class);
 		System.out.println("Consumer-postForObject(): ");
 		System.out.println("Response : " + response);
+		System.out.println("_______________________________");
 	}
 
 }
