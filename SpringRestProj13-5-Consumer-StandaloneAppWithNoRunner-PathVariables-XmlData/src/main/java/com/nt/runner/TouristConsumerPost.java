@@ -30,6 +30,7 @@ public class TouristConsumerPost {
 
 		//Consuming the provider using postForEntity()
 		ResponseEntity<String> responseEntity = template.postForEntity(serviceUrl, httpEntity, String.class);
+		System.out.println("_____________Post______________");
 		System.out.println("Consumer-postForEntity(): ");
 		System.out.println("Body : " + responseEntity.getBody());
 		System.out.println("Status Code Value : " + responseEntity.getStatusCodeValue());
@@ -37,10 +38,11 @@ public class TouristConsumerPost {
 		System.out.println("Status Code : " + responseEntity.getStatusCode());
 		System.out.println("------------------------------");
 
-		//Consuming the provider using postForObject()
+		//Using postForObject()
 		String response = template.postForObject(serviceUrl, httpEntity, String.class);
 		System.out.println("Consumer-postForObject(): ");
 		System.out.println("Response : " + response);
+		System.out.println("_______________________________");
 	}
 
 }

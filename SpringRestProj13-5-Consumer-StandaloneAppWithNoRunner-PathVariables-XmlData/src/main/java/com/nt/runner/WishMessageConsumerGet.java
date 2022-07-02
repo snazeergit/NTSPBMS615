@@ -4,7 +4,6 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -26,16 +25,17 @@ public class WishMessageConsumerGet {
 		//consume the service using xxxFOrEntity(-) method
 		ResponseEntity<String> response = template.getForEntity(serviceUrl, String.class,
 				Map.of("name", "Nazeer", "id", 1234));
+		System.out.println("_____________Get______________");
 		//process response
 		System.out.println("Consumer-getForEntity(): ");
 		System.out.println("Response Body: " + response.getBody());
 		System.out.println("Response Code: " + response.getStatusCode());
 		System.out.println("Response Headers: " + response.getHeaders());
-		System.out.println("------------------------------");
-		//consume the service using getForObject() method
+
 		String response1 = template.getForObject(serviceUrl, String.class, 1234, "Nazeer");
 		System.out.println("Consumer-getForObject(): ");
 		System.out.println("Response : " + response1);
+		System.out.println("_________________________________");
 	}
 
 }

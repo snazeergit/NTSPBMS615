@@ -23,18 +23,20 @@ public class TouristConsumerPostRunner implements CommandLineRunner {
 		String serviceUrl = "http://localhost:2020/SpringRestProj13-1-ProviderApp-PathVariables-JsonData/wish/api/register";
 
 		//Using postForEntity()
-		ResponseEntity<String> responseEntity = template.postForEntity(serviceUrl, httpEntity, String.class);
-		System.out.println("Consumer-postForEntity(): ");
-		System.out.println("Body : " + responseEntity.getBody());
-		System.out.println("Status Code Value : " + responseEntity.getStatusCodeValue());
-		System.out.println("Headers : " + responseEntity.getHeaders());
-		System.out.println("Status Code : " + responseEntity.getStatusCode());
-		System.out.println("------------------------------");
+				ResponseEntity<String> responseEntity = template.postForEntity(serviceUrl, httpEntity, String.class);
+				System.out.println("_____________Post______________");
+				System.out.println("Consumer-postForEntity(): ");
+				System.out.println("Body : " + responseEntity.getBody());
+				System.out.println("Status Code Value : " + responseEntity.getStatusCodeValue());
+				System.out.println("Headers : " + responseEntity.getHeaders());
+				System.out.println("Status Code : " + responseEntity.getStatusCode());
+				System.out.println("------------------------------");
 
-		//Using postForObject()
-		String response = template.postForObject(serviceUrl, httpEntity, String.class);
-		System.out.println("Consumer-postForObject(): ");
-		System.out.println("Response : " + response);
+				//Using postForObject()
+				String response = template.postForObject(serviceUrl, httpEntity, String.class);
+				System.out.println("Consumer-postForObject(): ");
+				System.out.println("Response : " + response);
+				System.out.println("_______________________________");
 	}
 
 }
