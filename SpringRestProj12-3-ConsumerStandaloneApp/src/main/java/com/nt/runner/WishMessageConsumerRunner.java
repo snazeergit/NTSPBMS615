@@ -22,6 +22,7 @@ public class WishMessageConsumerRunner implements CommandLineRunner {
 		ResponseEntity<String> response = template.getForEntity(serviceUrl, String.class);
 
 		//process response
+		System.out.println("___________GET-Standalone Runner__________");
 		System.out.println("Consumer-getForEntity(): ");
 		System.out.println("Response Body: " + response.getBody());
 		System.out.println("Response Status code: " + response.getStatusCodeValue());
@@ -32,6 +33,7 @@ public class WishMessageConsumerRunner implements CommandLineRunner {
 		String response1 = template.getForObject(serviceUrl, String.class);
 		System.out.println("Consumer-getForObject(): ");
 		System.out.println("Response : " + response1);
+		System.out.println("_______________________________________");
 	}
 
 }

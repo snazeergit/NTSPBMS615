@@ -21,6 +21,7 @@ public class WishMessageConsumer {
 		ResponseEntity<String> response = template.getForEntity(serviceUrl, String.class);
 
 		//process response
+		System.out.println("_____GET-Standalone Consumer No Runner______");
 		System.out.println("Consumer-getForEntity(): ");
 		System.out.println("Response Body: " + response.getBody());
 		System.out.println("Response Status code: " + response.getStatusCodeValue());
@@ -31,6 +32,7 @@ public class WishMessageConsumer {
 		String response1 = template.getForObject(serviceUrl, String.class);
 		System.out.println("Consumer-getForObject(): ");
 		System.out.println("Response : " + response1);
+		System.out.println("_______________________________________");
 	}
 
 }
