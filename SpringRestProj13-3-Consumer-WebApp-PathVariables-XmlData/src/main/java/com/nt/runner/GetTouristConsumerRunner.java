@@ -26,6 +26,7 @@ public class GetTouristConsumerRunner implements CommandLineRunner {
 		System.out.println("Response Body: " + response.getBody());
 		System.out.println("Response Code: " + response.getStatusCode());
 		System.out.println("Response Headers: " + response.getHeaders());
+		System.out.println("------------------------------");
 
 		String response1 = template.getForObject(serviceUrl, String.class, 1234, "Nazeer");
 		System.out.println("Consumer-getForObject(): ");
