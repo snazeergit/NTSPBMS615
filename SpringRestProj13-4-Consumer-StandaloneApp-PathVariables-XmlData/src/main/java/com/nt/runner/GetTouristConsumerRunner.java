@@ -19,7 +19,7 @@ public class GetTouristConsumerRunner implements CommandLineRunner {
 	@Value("${service.get.url}")
 	private String serviceUrl;
 	//(or)
-	//private String serviceUrl = "http://localhost:2020/SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData/tourist/api/message/{id}/{name}";
+	//private String serviceUrl = "http://localhost:2020/SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData/tourist/api/wish/{id}/{name}";
 
 	@Override
 	public void run(String... args) throws Exception {

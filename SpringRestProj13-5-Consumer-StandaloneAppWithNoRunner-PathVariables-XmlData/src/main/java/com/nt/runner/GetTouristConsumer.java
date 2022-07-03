@@ -18,7 +18,7 @@ public class GetTouristConsumer {
 	@Value("${service.get.url}")
 	private String serviceUrl;
 	//(or)
-	//private String serviceUrl = "http://localhost:2020/SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData/tourist/api/message/{id}/{name}";
+	//private String serviceUrl = "http://localhost:2020/SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData/tourist/api/wish/{id}/{name}";
 
 	//Normal User defined method
 	public void run()  {

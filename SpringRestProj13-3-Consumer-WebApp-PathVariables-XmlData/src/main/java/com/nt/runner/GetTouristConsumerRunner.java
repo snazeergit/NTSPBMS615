@@ -16,7 +16,7 @@ public class GetTouristConsumerRunner implements CommandLineRunner {
 		//Create RestTemplate object
 		RestTemplate template = new RestTemplate();
 		//Prepare service/base url
-		String serviceUrl = "http://localhost:2020/SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData/tourist/api/message/{id}/{name}";
+		String serviceUrl = "http://localhost:2020/SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData/tourist/api/wish/{id}/{name}";
 		//consume the service using xxxFOrEntity(-) method
 		ResponseEntity<String> response = template.getForEntity(serviceUrl, String.class,
 				Map.of("name", "Nazeer", "id", 1234));
