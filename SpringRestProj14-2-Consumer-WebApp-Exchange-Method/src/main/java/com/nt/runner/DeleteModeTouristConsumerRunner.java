@@ -16,7 +16,7 @@ public class DeleteModeTouristConsumerRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		String serviceUrl = "http://localhost:2020/SpringRestProj14-1-ProviderApp-PathVariables-JsonData/wish/api/delete/{id}";
+		String serviceUrl = "http://localhost:2020/SpringRestProj14-1-ProviderApp-PathVariables-JsonData/tourist/api/delete/{id}";
 		ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.DELETE, null, String.class, 10);
 
 		System.out.println("_____________Delete______________");

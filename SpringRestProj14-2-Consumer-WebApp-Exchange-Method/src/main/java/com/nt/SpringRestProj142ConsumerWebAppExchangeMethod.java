@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class SpringRestProj132ConsumerWebAppPathVariablesJsonDataApplication {
+public class SpringRestProj142ConsumerWebAppExchangeMethod {
 
 	@Bean
 	public RestTemplate getTemplate() {
@@ -14,7 +14,7 @@ public class SpringRestProj132ConsumerWebAppPathVariablesJsonDataApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringRestProj132ConsumerWebAppPathVariablesJsonDataApplication.class, args);
+		SpringApplication.run(SpringRestProj142ConsumerWebAppExchangeMethod.class, args);
 	}
 
 }

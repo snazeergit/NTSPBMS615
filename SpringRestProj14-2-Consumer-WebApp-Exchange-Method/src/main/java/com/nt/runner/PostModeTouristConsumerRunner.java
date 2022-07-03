@@ -1,5 +1,6 @@
 package com.nt.runner;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -12,15 +13,17 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class PostModeTouristConsumerRunner implements CommandLineRunner {
 
+	@Autowired
+	private RestTemplate template;
+
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO Auto-generated method stub
-		RestTemplate template = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
+
 		String jsonRequestBody = "{ \"tid\":123, \"tname\":\"nazeer\",\"startPlace\":\"Nellore\",\"destPlace\":\"Hyderabad\" }";
 		HttpEntity<String> httpEntity = new HttpEntity<String>(jsonRequestBody, headers);
-		String serviceUrl = "http://localhost:2020/SpringRestProj14-1-ProviderApp-PathVariables-JsonData/wish/api/register";
+		String serviceUrl = "http://localhost:2020/SpringRestProj14-1-ProviderApp-PathVariables-JsonData/tourist/api/register";
 
 		//Using postForEntity()
 		ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.POST, httpEntity, String.class);

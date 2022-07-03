@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SpringRestProj132ConsumerWebAppPathVariablesJsonDataApplication.class);
+		return application.sources(SpringRestProj142ConsumerWebAppExchangeMethod.class);
 	}
 
 }

@@ -13,32 +13,37 @@ import org.springframework.web.bind.annotation.RestController;
 import com.nt.model.Tourist;
 
 @RestController
-@RequestMapping("/wish/api")
-public class WishMessageGenerator {
-	
-	@GetMapping("/report")
+@RequestMapping("/tourist/api")
+public class TouristController {
+
+	@GetMapping("/wish")
 	public ResponseEntity<String> showWishMessage() {
-		System.out.println("WishMessageGenerator.showWishMessage()");
+		System.out.println("TouristController.showWishMessage()");
 		return new ResponseEntity<String>("GoodNight", HttpStatus.OK);
 	}
 
+	@GetMapping("/wish/{id}")
+	public ResponseEntity<String> showWishMessage(@PathVariable Integer id) {
+		System.out.println("TouristController.showWishMessage()");
+		return new ResponseEntity<String>("GoodNight", HttpStatus.OK);
+	}
 
-	@GetMapping("/message/{id}/{name}")
+	@GetMapping("/wish/{id}/{name}")
 	public ResponseEntity<String> showWishMessage(@PathVariable Integer id, @PathVariable String name) {
-		System.out.println(id + "               " + name);
+		System.out.println("TouristController.showWishMessage()");
 		return new ResponseEntity<String>("GoodNight" + id + "     " + name, HttpStatus.OK);
 	}
 
 	@PostMapping("/register")
 	public ResponseEntity<Tourist> registerTourist(@RequestBody Tourist tourist) {
-		System.out.println("WishMessageGenerator.registerTourist()");
+		System.out.println("TouristController.registerTourist()");
 		return new ResponseEntity<Tourist>(tourist, HttpStatus.CREATED);
 	}
 
 	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<String> deleteTourist(@PathVariable Integer id) {
-		System.out.println("WishMessageGenerator.deleteTourist()");
-		return new ResponseEntity<String>(id+" tourist is deleted", HttpStatus.OK);
+		System.out.println("TouristController.deleteTourist()");
+		return new ResponseEntity<String>(id + " tourist is deleted", HttpStatus.OK);
 	}
 
 }
