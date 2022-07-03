@@ -11,15 +11,15 @@ import org.springframework.web.client.RestTemplate;
 
 //Runner class to test the post method in Producer
 @Component("tourist")
-public class TouristConsumerPost {
+public class PostTouristConsumer {
 
 	@Autowired
 	private RestTemplate template;
 
-	@Value("${service.tourist.url}")
+	@Value("${service.post.url}")
 	private String serviceUrl;
 	//or
-	//	private String serviceUrl = "http://localhost:2020/SpringRestProj13-1-ProviderApp-PathVariables-JsonData/wish/api/register";
+	//	private String serviceUrl = "http://localhost:2020/SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData/tourist/api/register";
 
 	//Normal user defined method
 	public void run() {

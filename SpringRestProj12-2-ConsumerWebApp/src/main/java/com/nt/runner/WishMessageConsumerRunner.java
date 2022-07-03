@@ -26,7 +26,7 @@ public class WishMessageConsumerRunner implements CommandLineRunner {
 		//consume the service using xxxFOrEntity(-) method
 		ResponseEntity<String> response = template.getForEntity(serviceUrl, String.class);
 		//process response
-		System.out.println("_______GET-WebConsumer______________");
+		System.out.println("________________GET__________________");
 		System.out.println("Response Body: " + response.getBody());
 		System.out.println("Response Code: " + response.getStatusCode());
 		System.out.println("Response Headers: " + response.getHeaders());

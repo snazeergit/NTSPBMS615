@@ -6,15 +6,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class SpringRestProj134ConsumerStandaloneAppPathVariablesJsonDataApplication {
-	
-	@Bean(name = "template")
-	public RestTemplate creteTemplate() {
+public class SpringRestProj132TouristConsumerWebAppPathVariablesJsonDataApplication {
+
+	@Bean
+	public RestTemplate getTemplate() {
 		return new RestTemplate();
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringRestProj134ConsumerStandaloneAppPathVariablesJsonDataApplication.class, args);
+		SpringApplication.run(SpringRestProj132TouristConsumerWebAppPathVariablesJsonDataApplication.class, args);
 	}
 
 }

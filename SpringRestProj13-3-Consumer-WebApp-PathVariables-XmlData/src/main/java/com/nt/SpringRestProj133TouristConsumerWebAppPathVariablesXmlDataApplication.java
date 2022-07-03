@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringRestProj133ConsumerWebAppPathVariablesXmlDataApplication {
+public class SpringRestProj133TouristConsumerWebAppPathVariablesXmlDataApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringRestProj133ConsumerWebAppPathVariablesXmlDataApplication.class, args);
+		SpringApplication.run(SpringRestProj133TouristConsumerWebAppPathVariablesXmlDataApplication.class, args);
 	}
 
 }

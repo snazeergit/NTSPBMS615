@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>nit</groupId>
-	<artifactId>SpringRestProj12-2-ConsumerWebApp</artifactId>
+	<artifactId>SpringRestProj13-2-Tourist-Consumer-WebApp-PathVariables-JsonData</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>SpringRestProj12-2-ConsumerWebApp</name>
+	<name>SpringRestProj13-2-Tourist-Consumer-WebApp-PathVariables-JsonData</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>SpringRestProj13-1-ProviderApp-PathVariables-JsonData</artifactId>
+	<artifactId>SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>SpringRestProj13-1-ProviderApp-PathVariables-JsonData</name>
+	<name>SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

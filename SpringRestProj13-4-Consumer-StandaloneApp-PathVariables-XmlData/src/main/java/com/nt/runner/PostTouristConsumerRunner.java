@@ -1,5 +1,7 @@
 package com.nt.runner;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -10,19 +12,24 @@ import org.springframework.web.client.RestTemplate;
 
 //Runner class to test the post method in Producer
 @Component
-public class TouristConsumerPostRunner implements CommandLineRunner {
+public class PostTouristConsumerRunner implements CommandLineRunner {
+
+	@Autowired
+	private RestTemplate template;
+
+	@Value("${service.post.url}")
+	private String serviceUrl;
+	//or
+	//	private String serviceUrl = "http://localhost:2020/SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData/tourist/api/register";
 
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO Auto-generated method stub
-		RestTemplate template = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		String jsonRequestBody = "{ \"tid\":123, \"tname\":\"nazeer\",\"startPlace\":\"Nellore\",\"destPlace\":\"Hyderabad\" }";
-		HttpEntity<String> httpEntity = new HttpEntity<String>(jsonRequestBody, headers);
-		String serviceUrl = "http://localhost:2020/SpringRestProj13-1-ProviderApp-PathVariables-JsonData/wish/api/register";
+		headers.setContentType(MediaType.APPLICATION_XML);
+		String xmlRequestBody = "<Tourist><tid>123</tid><tname>nazeer</tname><startPlace>nellore</startPlace><destPlace>hyderabad</destPlace></Tourist>";
+		HttpEntity<String> httpEntity = new HttpEntity<String>(xmlRequestBody, headers);
 
-		//Using postForEntity()
+		//Consuming the provider using postForEntity()
 		ResponseEntity<String> responseEntity = template.postForEntity(serviceUrl, httpEntity, String.class);
 		System.out.println("_____________Post______________");
 		System.out.println("Consumer-postForEntity(): ");

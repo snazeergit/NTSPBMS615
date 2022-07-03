@@ -16,7 +16,7 @@ public class DeleteTouristRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		String serviceUrl = "http://localhost:2020/SpringRestProj13-1-ProviderApp-PathVariables-JsonData/wish/api/delete/{id}";
+		String serviceUrl = "http://localhost:2020/SpringRestProj13-1-Tourist-ProviderApp-PathVariables-JsonData/tourist/api/delete/{id}";
 
 		template.delete(serviceUrl, Map.of("id", 10));
 
