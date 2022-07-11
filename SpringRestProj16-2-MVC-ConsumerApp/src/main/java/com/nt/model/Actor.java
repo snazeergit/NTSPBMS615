@@ -7,7 +7,7 @@ public class Actor {
 
 	private Integer actorId;
 	private String actorName;
-	private String category;
-	private Long mobileNo;
+	private String category="Hero";
+	private Long mobileNo=999999999l;
 
 }
