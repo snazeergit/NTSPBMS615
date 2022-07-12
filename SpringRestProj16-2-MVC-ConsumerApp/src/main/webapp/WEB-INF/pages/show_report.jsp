@@ -6,7 +6,7 @@
 
 <c:choose>
 	<c:when test="${!empty actorsInfo }">
-		<table border="1" align="center" bgcolor="yellow">
+		<table border="1" align="center" bgcolor="orange">
 			<tr>
 				<th>ActorID</th>
 				<th>ActorName</th>
@@ -22,7 +22,7 @@
 					<td>${artist.mobileNo }</td>
 					<td><a href="actor_edit?aid=${artist.actorId }">edit<img
 							src="images/edit.jpeg" width="30px" height="30px" /></a></td>
-					<td><a href="actor_delete?aid=${artist.actorId }">delete<img
+					<td><a href="actor_delete?aid=${artist.actorId }" onclick="return confirm('Do you want to delete')">delete<img
 							src="images/delete.jpeg" width="30px" height="30px" /></a></td>
 				</tr>
 			</c:forEach>

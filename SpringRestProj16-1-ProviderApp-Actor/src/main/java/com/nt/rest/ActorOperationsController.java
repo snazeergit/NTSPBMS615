@@ -37,7 +37,7 @@ public class ActorOperationsController {
 		return new ResponseEntity<Iterable<Actor>>(iterable, HttpStatus.OK);
 	}
 
-	@GetMapping("/get/{id}")
+	@GetMapping("/getActor/{id}")
 	public ResponseEntity<?> getActorById(@PathVariable Integer id) {
 		Actor actor = service.getActorById(id);
 		return new ResponseEntity<Actor>(actor, HttpStatus.OK);
