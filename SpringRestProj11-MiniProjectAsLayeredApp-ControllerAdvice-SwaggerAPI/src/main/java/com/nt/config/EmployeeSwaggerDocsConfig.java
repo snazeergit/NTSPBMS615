@@ -21,15 +21,28 @@ public class EmployeeSwaggerDocsConfig {
 
 	@Bean
 	public Docket createDocket() {
-		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.nt.rest"))
-				.paths(PathSelectors.regex("/emp.*")).build().useDefaultResponseMessages(true)
-				.apiInfo(getApiInfo());
+		return new Docket(
+				DocumentationType.SWAGGER_2).
+				select().
+				apis(RequestHandlerSelectors.basePackage("com.nt.rest")).
+				paths(PathSelectors.regex("/emp.*")).
+				build().
+				useDefaultResponseMessages(true).
+				apiInfo(getApiInfo());
 	}
 
 	private ApiInfo getApiInfo() {
 		Contact contact = new Contact("Nazeer", "https://www.KRTile.com", "krtiles@gmail.com");
-		return new ApiInfo("Employee Swagger API", "Provides CURD operations on Employee", "1.0-RELEASE", "http://KRTiles.com",
-				contact, "GNU Public", "https:/KRTiles.com/lisence/gnu", Collections.emptyList());
+		return new ApiInfo(
+				"Employee Swagger API", 
+				"Provides CURD operations on Employee", 
+				"1.0-RELEASE", 
+				"http://KRTiles.com",
+				contact, 
+				"GNU Public", 
+				"https:/KRTiles.com/lisence/gnu", 
+				Collections.emptyList()
+				);
 	}
 
 }

@@ -3,11 +3,9 @@ package com.nt.service;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-import org.aspectj.apache.bcel.classfile.Module.Open;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -44,7 +42,7 @@ public class ActorMgmtServiceImpl implements IActorMgmtService {
 		Iterable<Actor> iterable = actorRepo.findAll();
 		List<Actor> list = (List<Actor>) iterable;
 		list.sort((t1, t2) -> t1.getActorName().compareTo(t2.getActorName()));
-		return iterable;
+		return list;
 	}
 
 	@Override //Sorting using Collections
@@ -52,7 +50,7 @@ public class ActorMgmtServiceImpl implements IActorMgmtService {
 		Iterable<Actor> iterable = actorRepo.findAll();
 		List<Actor> list = (List<Actor>) iterable;
 		Collections.sort(list, (t1, t2) -> t1.getActorName().compareTo(t2.getActorName()));
-		return iterable;
+		return list;
 	}
 
 	@Override //Sorting using Streams

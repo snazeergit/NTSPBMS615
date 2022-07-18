@@ -15,6 +15,7 @@ public class Actor {
 
 	@Id
 	@GeneratedValue
+	@Column
 	private Integer actorId;
 
 	@Column(length = 20)
@@ -22,7 +23,8 @@ public class Actor {
 
 	@Column(length = 20)
 	private String category;
-
+	
+	@Column
 	private Long mobileNo;
 
 }

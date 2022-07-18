@@ -41,7 +41,7 @@ public class ActorMgmtServiceImpl implements IActorMgmtService {
 		Iterable<Actor> iterable = actorRepo.findAll();
 		List<Actor> list = (List<Actor>) iterable;
 		list.sort((t1, t2) -> t1.getActorName().compareTo(t2.getActorName()));
-		return iterable;
+		return list;
 	}
 
 	@Override //Sorting using Collections
@@ -49,7 +49,7 @@ public class ActorMgmtServiceImpl implements IActorMgmtService {
 		Iterable<Actor> iterable = actorRepo.findAll();
 		List<Actor> list = (List<Actor>) iterable;
 		Collections.sort(list, (t1, t2) -> t1.getActorName().compareTo(t2.getActorName()));
-		return iterable;
+		return list;
 	}
 
 	@Override //Sorting using Streams

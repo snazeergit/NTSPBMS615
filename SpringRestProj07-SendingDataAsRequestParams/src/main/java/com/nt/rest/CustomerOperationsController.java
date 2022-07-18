@@ -19,7 +19,7 @@ public class CustomerOperationsController {
 		return new ResponseEntity<String>(no + "  " + sname, HttpStatus.OK);
 	}
 
-	/*by default required is true makes it mandatory parameter,if the client
+	/*by default required is 'true' makes it mandatory parameter, if the client
 	doesn't pass it then we receive 400 error Bad Request*/
 	@GetMapping("/report1")
 	public ResponseEntity<String> showReport1(@RequestParam Integer sno, @RequestParam(required = false) String sname) {

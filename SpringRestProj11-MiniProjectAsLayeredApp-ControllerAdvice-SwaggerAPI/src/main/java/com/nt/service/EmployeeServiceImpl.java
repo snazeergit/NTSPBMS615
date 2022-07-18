@@ -47,6 +47,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		if (optional.isPresent()) {
 			Employee emp = optional.get();
 			emp.setEmpLocation(location);
+			repo.save(emp);
 			return "Employee Location updated";
 		}
 		throw new EmployeeNotFoundException("Employee is not found...");
