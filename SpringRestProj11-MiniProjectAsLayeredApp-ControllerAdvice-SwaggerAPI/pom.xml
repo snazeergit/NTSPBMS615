@@ -8,10 +8,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nit</groupId>
-	<artifactId>SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee</artifactId>
+	<artifactId>SpringRestProj11-MiniProjectAsLayeredApp-ControllerAdvice-SwaggerAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>SpringRestProj10-MiniProjectAsLayeredApp-ControllerAdvice-Employee</name>
+	<name>SpringRestProj11-MiniProjectAsLayeredApp-ControllerAdvice-SwaggerAPI</name>
 	<description>Demo project for Spring Rest Layered App</description>
 	<properties>
 		<java.version>1.8</java.version>

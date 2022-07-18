@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringRestProj10MiniProjectAsLayeredAppControllerAdviceEmployeeApplication {
+public class SpringRestProj11MiniProjectAsLayeredAppControllerAdviceSwaggerAPIApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringRestProj10MiniProjectAsLayeredAppControllerAdviceEmployeeApplication.class, args);
+		SpringApplication.run(SpringRestProj11MiniProjectAsLayeredAppControllerAdviceSwaggerAPIApplication.class, args);
 	}
 
 }
