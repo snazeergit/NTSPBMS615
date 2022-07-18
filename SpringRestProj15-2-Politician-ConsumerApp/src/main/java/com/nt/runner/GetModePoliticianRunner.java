@@ -22,10 +22,13 @@ public class GetModePoliticianRunner implements CommandLineRunner {
 
 	@Autowired
 	private RestTemplate template;
+
+	@Autowired
+	private ObjectMapper objectMapper;
+
 	private String providerURL1 = "http://localhost:2020/SpringRestProj15-1-Politician-ProviderApp/politician/api/get";
 	private String providerURL2 = "http://localhost:2020/SpringRestProj15-1-Politician-ProviderApp/politician/api/getList";
 	private String providerURL3 = "http://localhost:2020/SpringRestProj15-1-Politician-ProviderApp/politician/api/getMap";
-	ObjectMapper objectMapper = new ObjectMapper();
 
 	@Override
 	public void run(String... args) throws Exception {
@@ -72,15 +75,6 @@ public class GetModePoliticianRunner implements CommandLineRunner {
 		System.out.println("Status Code : " + responseEntity3.getStatusCode());
 		System.out.println("Deserialization: JSON -->Object conversion ");
 
-		//TODO
-		//Approach-1
-		/*Politician[][] Politician = objectMapper.readValue(responseEntity3.getBody(), Politician[][].class);
-		Map<String, String> map1 = Arrays.stream(Politician).collect(Collectors.toMap(e -> e[0].toString(), e -> e[1].toString()));
-		map1.forEach((k, v) -> System.out.println(k + " :  " + v));*/
-
-		// OR
-
-		//Approach-2
 		System.out.println("Using TypeReference():: ");
 		Map<String, String> map2 = objectMapper.readValue(responseEntity3.getBody(),
 				new TypeReference<Map<String, String>>() {
