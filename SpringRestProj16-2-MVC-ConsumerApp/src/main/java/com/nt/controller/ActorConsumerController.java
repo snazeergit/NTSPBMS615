@@ -66,8 +66,16 @@ public class ActorConsumerController {
 
 		//Convert JSON body in List<Actor> object
 		ObjectMapper mapper = new ObjectMapper();
-		List<Actor> list = mapper.readValue(jsonBody, new TypeReference<List<Actor>>() {
-		});
+		
+		/*TypeReference is an abstract class. The {} provides an empty implementation via an anonymous class.
+		new TypeReference<List<Actor>>() {	} provides an empty implementation via an anonymous class to TypeReference Abstract class
+		of type List<Actor> .*/
+		
+		/*TypeReference<List<Actor>> ref = new TypeReference<>() {};
+		List<Actor> list = mapper.readValue(jsonBody, ref);
+											//(OR)
+		*/		
+		List<Actor> list = mapper.readValue(jsonBody, new TypeReference<List<Actor>>() {	});
 		System.out.println("Java response : " + list);
 		map.put("actorsInfo", list);
 		//return LVN

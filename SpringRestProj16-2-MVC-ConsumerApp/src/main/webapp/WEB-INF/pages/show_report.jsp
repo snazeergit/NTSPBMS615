@@ -12,7 +12,7 @@
 				<th>ActorName</th>
 				<th>Category</th>
 				<th>MobileNo</th>
-				<th>Operation</th>
+				<th colspan="2">Operation</th>
 			</tr>
 			<c:forEach var="artist" items="${actorsInfo }">
 				<tr>
