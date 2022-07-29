@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>nit</groupId>
-	<artifactId>MSProj03-Ms01</artifactId>
+	<artifactId>MSProj03-EurekaClient-Consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>MSProj03-Ms01</name>
+	<name>MSProj03-EurekaClient-Consumer</name>
 	<description>Demo project for Eurekha Server</description>
 	<properties>
 		<java.version>17</java.version>

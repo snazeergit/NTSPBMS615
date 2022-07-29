@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class MsProj03Ms01Application {
+public class MSProj03EurekaClientConsumerApplication {
 	
 	@Bean
 	public RestTemplate createRestTemplate() {
@@ -16,7 +16,7 @@ public class MsProj03Ms01Application {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsProj03Ms01Application.class, args);
+		SpringApplication.run(MSProj03EurekaClientConsumerApplication.class, args);
 	}
 
 }

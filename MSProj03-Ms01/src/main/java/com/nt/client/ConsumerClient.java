@@ -16,6 +16,7 @@ public class ConsumerClient {
 
 	@Autowired
 	private DiscoveryClient client;
+
 	@Autowired
 	private RestTemplate template;
 
@@ -28,5 +29,5 @@ public class ConsumerClient {
 		String body = response.getBody();
 		return body;
 	}
-	
+
 }

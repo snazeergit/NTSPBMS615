@@ -19,6 +19,6 @@ public class CartServiceController {
 	@GetMapping("/viewCart")
 	public ResponseEntity<String> showCart() {
 		String billingInfo = client.billingInfo();
-		return new ResponseEntity<String>("Provisions added to the cart :: "+billingInfo, HttpStatus.OK);
+		return new ResponseEntity<String>("Provisions added to the cart :: " + billingInfo, HttpStatus.OK);
 	}
 }
