@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>nit</groupId>
-	<artifactId>MSProj08-ConfigServer</artifactId>
+	<artifactId>MSProj08-ConfigServer-Bootstrap</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MSProj08-ConfigServer</name>
+	<name>MSProj08-ConfigServer-Bootstrap</name>
 	<description>Demo project for Eurekha Server</description>
 	<properties>
 		<java.version>17</java.version>

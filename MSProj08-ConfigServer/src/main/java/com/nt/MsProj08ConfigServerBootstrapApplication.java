@@ -6,10 +6,10 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
 @SpringBootApplication
-public class MsProj08ConfigServerApplication {
+public class MsProj08ConfigServerBootstrapApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsProj08ConfigServerApplication.class, args);
+		SpringApplication.run(MsProj08ConfigServerBootstrapApplication.class, args);
 	}
 
 }
