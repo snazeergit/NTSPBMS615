@@ -7,6 +7,80 @@
 	},
 	"item": [
 		{
+			"name": "SpringRestProj01-FirstProviderApp",
+			"item": [
+				{
+					"name": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2020",
+							"path": [
+								"SpringRestProj01-FirstProviderApp",
+								"messageapi",
+								"wish"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "2020",
+									"path": [
+										"SpringRestProj01-FirstProviderApp",
+										"messageapi",
+										"wish"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "11"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jun 2022 18:21:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=20"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Good Night!"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "SpringRestProj02-AllRequestModes-RESTAPI",
 			"item": [
 				{
@@ -436,80 +510,6 @@
 							],
 							"cookie": [],
 							"body": null
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "SpringRestProj01-FirstProviderApp",
-			"item": [
-				{
-					"name": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "2020",
-							"path": [
-								"SpringRestProj01-FirstProviderApp",
-								"messageapi",
-								"wish"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:2020/SpringRestProj01-FirstProviderApp/messageapi/wish",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "2020",
-									"path": [
-										"SpringRestProj01-FirstProviderApp",
-										"messageapi",
-										"wish"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "plain",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "text/plain;charset=UTF-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "11"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 15 Jun 2022 18:21:38 GMT"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=20"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								}
-							],
-							"cookie": [],
-							"body": "Good Night!"
 						}
 					]
 				}
@@ -4966,6 +4966,145 @@
 							],
 							"cookie": [],
 							"body": "Employee record deleted"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MSProj10-ConfigServer",
+			"item": [
+				{
+					"name": "http://localhost:9091/actuator/refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9091/actuator/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9091",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:9091/actuator/refresh",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9091/actuator/refresh",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9091",
+									"path": [
+										"actuator",
+										"refresh"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.spring-boot.actuator.v3+json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Jul 2022 19:33:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"config.client.version\",\n    \"dbpwd\",\n    \"dbuser\"\n]"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:9092/actuator/refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9092/actuator/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9092",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:9092/actuator/refresh",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9092/actuator/refresh",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9092",
+									"path": [
+										"actuator",
+										"refresh"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.spring-boot.actuator.v3+json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Jul 2022 19:35:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"config.client.version\",\n    \"dbpwd\",\n    \"spring.cloud.client.hostname\",\n    \"dbuser\"\n]"
 						}
 					]
 				}
