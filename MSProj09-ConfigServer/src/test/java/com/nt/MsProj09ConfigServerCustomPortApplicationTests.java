@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsProj09ConfigServerApplicationTests {
+class MsProj09ConfigServerCustomPortApplicationTests {
 
 	@Test
 	void contextLoads() {

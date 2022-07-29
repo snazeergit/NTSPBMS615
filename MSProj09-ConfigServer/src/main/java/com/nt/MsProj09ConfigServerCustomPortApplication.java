@@ -6,10 +6,10 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableConfigServer
 @SpringBootApplication
-public class MsProj09ConfigServerApplication {
+public class MsProj09ConfigServerCustomPortApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MsProj09ConfigServerApplication.class, args);
+		SpringApplication.run(MsProj09ConfigServerCustomPortApplication.class, args);
 	}
 
 }
