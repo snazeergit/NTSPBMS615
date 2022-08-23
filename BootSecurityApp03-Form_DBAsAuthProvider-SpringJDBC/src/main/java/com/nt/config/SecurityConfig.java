@@ -22,8 +22,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	public void configure(AuthenticationManagerBuilder auth) throws Exception {
 		//Using Database as authentication info provider through Spring JDBC
 		auth.jdbcAuthentication().dataSource(ds).passwordEncoder(new BCryptPasswordEncoder())
-				.usersByUsernameQuery("SELECT UNAME,PWD,STATUS FROM USERS WHERE UNAME=?")//For authentication
-				.authoritiesByUsernameQuery("SELECT UNAME,ROLE FROM USERS_ROLES WHERE UNAME=?");//for authorization
+				.usersByUsernameQuery("SELECT UNAME,PWD,STATUS FROM USERS1 WHERE UNAME=?")//For authentication
+				.authoritiesByUsernameQuery("SELECT UNAME,ROLE FROM USERS_ROLES1 WHERE UNAME=?");//for authorization
 	}
 
 	@Override
