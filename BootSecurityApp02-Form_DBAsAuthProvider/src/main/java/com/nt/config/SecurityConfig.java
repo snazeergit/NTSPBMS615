@@ -40,11 +40,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				//to logout from the existing active session
 				//.and().logout() // if we use the default handler logout in jsp
 				.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/signout"))
+
+				//configure custom error page for 403 error 
+				.and().exceptionHandling().accessDeniedPage("/denied")
+
 				//session max concurrency control
 				.and().sessionManagement().maximumSessions(2).maxSessionsPreventsLogin(true);
-
-		//configure custom error page for 403 error (works only when remember me option is not used)
-		//.and().exceptionHandling().accessDeniedPage("/denied");
 
 	}
 
