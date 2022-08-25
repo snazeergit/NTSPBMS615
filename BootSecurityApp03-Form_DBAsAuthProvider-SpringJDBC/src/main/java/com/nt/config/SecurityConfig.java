@@ -31,8 +31,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		//Authorize requests
 		http.authorizeRequests().antMatchers("/").permitAll()
 				.antMatchers("/offers").authenticated()
-				.antMatchers("/balance").hasAnyRole("CUSTOMER", "MANAGER")
-				.antMatchers("/loan").hasRole("MANAGER")
+				.antMatchers("/balance").hasAnyAuthority("CUSTOMER", "MANAGER")
+				.antMatchers("/loan").hasAuthority("MANAGER")
 				.anyRequest().authenticated() 
 				//To enable form based authentication
 				.and().formLogin()
