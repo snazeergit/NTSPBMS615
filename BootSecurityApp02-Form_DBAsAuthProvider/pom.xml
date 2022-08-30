@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>nit</groupId>
-	<artifactId>BootSecurityApp02-Form_DBAsAuthProvider</artifactId>
+	<artifactId>BootSecurityApp02-Form_InMemoryDB</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>BootSecurityApp02-Form_DBAsAuthProvider</name>
+	<name>BootSecurityApp02-Form_InMemoryDB</name>
 	<description>Demo project for Spring boot security</description>
 	<properties>
 		<java.version>17</java.version>
