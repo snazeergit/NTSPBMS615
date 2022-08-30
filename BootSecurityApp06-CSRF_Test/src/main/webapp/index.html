@@ -1,0 +1,8 @@
+
+<h1 style="color: red; text-align: center">Cross Site Requesting
+	Forgery(CSRF) Testing</h1>
+<!-- To feel the CSRF run this application and keep the BootSecurityApp04-Form_DBAsAuthProvider-SpringDataJPA app 
+in running mode and also run the CSRF_Test application below also and click on win lottery -->
+<form action="http://localhost:2020/BootSecurityApp06-Form_DBAsAuthProvider-SpringDataJPA-CSRF/bank/balance" method="post">
+	<input type="submit" value="Click here to win lottery" />
+</form>
