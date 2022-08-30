@@ -1,7 +1,5 @@
 package com.nt.config;
 
-import javax.sql.DataSource;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -29,10 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
-		//To feel the CSRF run this application and keep it in running mode and also run the CSRF_Test application below also and click on Show Balance
-		//Cross Site Requesting Forgery
-		http.csrf().disable() //disabling CSRF , by default it will be enabled
-		        .authorizeRequests().antMatchers("/bank/","/user/register", "/user/showLogin").permitAll()
+			http.authorizeRequests().antMatchers("/bank/","/user/register", "/user/showLogin").permitAll()
 				.antMatchers("/bank/offers").authenticated()
 				.antMatchers("/bank/balance").hasAnyAuthority("CUSTOMER", "MANAGER")
 				.antMatchers("/bank/loan").hasAuthority("MANAGER")
