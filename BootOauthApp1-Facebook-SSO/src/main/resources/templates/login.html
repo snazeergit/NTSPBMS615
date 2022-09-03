@@ -1,0 +1,28 @@
+<html xmlns:th="https://thymleaf.org">
+
+<h1 style="color: blue; text-align: center">Login page</h1>
+<form th:action="@{/login}" method="POST">
+
+<h3 style="color:red;text-align:center" th:if="${param.error}">Invalid username or password {authentication failed}</h3>
+<h3 style="color:green;text-align:center" th:if="${param.logout}">User Logged out successfully</h3>
+<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+
+	<table border="0" bgcolor="cyan" align="center">
+		<tr>
+			<td>Username:</td>
+			<td><input type="text" name="username"></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" name="password"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Login"></td>
+			<td><input type="reset" value="Cancel"></td>
+		</tr>
+	</table>
+</form>
+<br><br>
+<h1 style="color:blue;text-align:center"><a href="/oauth2/authorization/facebook">Continue with Facebook Login</a></h1>
+<br><br>
+<h1 style="color:blue;text-align:center"><a href="/oauth2/authorization/google">Continue with Google Login</a></h1>
