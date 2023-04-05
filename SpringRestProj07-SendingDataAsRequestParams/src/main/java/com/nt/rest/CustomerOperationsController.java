@@ -26,7 +26,7 @@ public class CustomerOperationsController {
 		return new ResponseEntity<String>(sno + "  " + sname, HttpStatus.OK);
 	}
 
-	/*required = true makes the parameter optional, if you pass the param with 
+	/*required = false makes the parameter optional, if you pass the param with 
 	matching name and type it will recognize the param if there is any mismatch 
 	in name or type then it will be ignored*/
 	@GetMapping("/report2")
