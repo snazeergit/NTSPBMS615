@@ -34,7 +34,7 @@ public class UserServiceImpl implements IUserService {
 		} else {
 			com.nt.model.UserDetails details = optional.get();
 			
-			/*//Converting Set<String> type roles to Set<SinpleGrantAuthority> type roles
+			/*//Converting Set<String> type roles to Set<SimpleGrantAuthority> type roles
 			Set<SimpleGrantedAuthority> roles1=new HashSet<>();
 			Set<String> roles2 = details.getRoles();
 			for (String role : roles2) {
