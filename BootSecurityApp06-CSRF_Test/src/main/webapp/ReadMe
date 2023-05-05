@@ -1,0 +1,37 @@
+Pre-requisites:
+===========
+A>To demonstrate CSRF problem comment the below fix in point B and make sure csrf protection is disable by adding 
+	http.scrf().disable() in the SecurityConfig class.
+B>In custom_login.html file add below code inside <form> scope to fix this issue.
+	<!-- To fix the CSRF problem -->
+	 <input type="hidden" th:name="${_csrf.parameterName}"
+		th:value="${_csrf.token}" />
+
+How to Test CSRF problem:
+======================
+1. Execute the project "BootSecurityApp06-Form_DBAsAuthProvider-SpringDataJPA-CSRF" as Run on Server 
+	but not as Spring Boot application.
+2. Now the change the URL on the browser to 
+	"http://localhost:2020/BootSecurityApp06-Form_DBAsAuthProvider-SpringDataJPA-CSRF/bank/" 	and select  
+	any available operation such as Show Offers.
+3. It will redirect you to the login page, so login with snazeer/VMware123! creds and view the offers.
+4. Now run the  "BootSecurityApp06-CSRF_Test" application as Run on Server and it will automatically launches index.html
+5. Click on the button CLick here to win lottery that will redirect to first application's balance check handler method as 
+	we are making the form post request.
+	
+	
+Note: 
+=====
+Make sure the external Tomcat server is configured to run on 2020 as its been used in the in the index.html page 
+<form> tag of  "BootSecurityApp06-CSRF_Test" application. If needed, change the port number in these both places.
+Also run the application as Run on Server to run it on External TOmcat Server as the URL formed in "BootSecurityApp06-CSRF_Test"
+project is aligned that way.
+
+Embedded Tomcat Server:
+======================
+	If planning to use embedded Tomcat Server then please make changes on these places.
+	1. Tomcat port no in application.properties of first project must be same as the port no specified in the URL present 
+		in index.html of second project.
+	2. Url specified in index.html must be same as Url for the balance check handler method. i.e click on balance check in 
+		first project  and it should match with the url specified in the second project index.html. 
+		
