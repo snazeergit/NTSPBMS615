@@ -9,23 +9,23 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.nt.model.UserDetails;
-import com.nt.service.IUserService;
+import com.nt.model.PersonDetails;
+import com.nt.service.IPersonService;
 
 @Controller
 @RequestMapping("/user")
 public class UserOperationsController {
 
 	@Autowired
-	private IUserService service;
+	private IPersonService service;
 
 	@GetMapping("/register") //for form lunching
-	public String showUserRegistrationForm(@ModelAttribute("userInfo") UserDetails details) {
+	public String showUserRegistrationForm(@ModelAttribute("userInfo") PersonDetails details) {
 		return "registration";
 	}
 
 	@PostMapping("/register")
-	public String registerUser(Map<String, Object> map, @ModelAttribute("userInfo") UserDetails details) {
+	public String registerUser(Map<String, Object> map, @ModelAttribute("userInfo") PersonDetails details) {
 		String resultMsg = service.register(details);
 		map.put("message", resultMsg);
 		//return LVN

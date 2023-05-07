@@ -18,7 +18,7 @@ import lombok.Data;
 @Table(name = "SECURITY_USERS")
 @Entity
 @Data
-public class UserDetails {
+public class PersonDetails {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

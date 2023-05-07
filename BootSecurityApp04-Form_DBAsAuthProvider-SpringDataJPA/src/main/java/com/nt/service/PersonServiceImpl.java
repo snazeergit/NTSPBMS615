@@ -14,13 +14,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.nt.repository.IUserDetailsRepo;
+import com.nt.repository.IPersonDetailsRepo;
 
 @Service
-public class UserServiceImpl implements IUserService {
+public class PersonServiceImpl implements IPersonService {
 
 	@Autowired
-	private IUserDetailsRepo repo;
+	private IPersonDetailsRepo repo;
 
 	@Autowired
 	private BCryptPasswordEncoder encoder;
@@ -28,11 +28,11 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		// Get model class object(com.nt.model.UserDetails)
-		Optional<com.nt.model.UserDetails> optional = repo.findByUname(username);
+		Optional<com.nt.model.PersonDetails> optional = repo.findByUname(username);
 		if (optional.isEmpty()) {
 			throw new IllegalArgumentException(username + " user not found");
 		} else {
-			com.nt.model.UserDetails details = optional.get();
+			com.nt.model.PersonDetails details = optional.get();
 			
 			/*//Converting Set<String> type roles to Set<SimpleGrantAuthority> type roles
 			Set<SimpleGrantedAuthority> roles1=new HashSet<>();
@@ -51,7 +51,7 @@ public class UserServiceImpl implements IUserService {
 	}
 
 	@Override
-	public String register(com.nt.model.UserDetails details) {
+	public String register(com.nt.model.PersonDetails details) {
 		details.setPwd(encoder.encode(details.getPwd()));
 		return repo.save(details).getUnid() + " user id is registered";
 	}
