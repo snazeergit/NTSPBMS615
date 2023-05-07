@@ -36,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.and().formLogin().defaultSuccessUrl("/bank/",true)
 				//for GET mode request to show the custom login page
 				.loginPage("/user/showLogin")
-				//for POST mode request to submit and process the request
+				//for POST mode request to submit and process the custom login page request
 				.loginProcessingUrl("/login")
 				//Authentication failed url
 				.failureUrl("/user/showLogin?error")
