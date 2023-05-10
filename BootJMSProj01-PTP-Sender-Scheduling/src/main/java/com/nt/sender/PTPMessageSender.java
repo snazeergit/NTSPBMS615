@@ -19,7 +19,7 @@ public class PTPMessageSender{
 	@Autowired
 	private JmsTemplate template;
 
-	@Scheduled(cron="*/10 * * * * *")
+	@Scheduled(cron="*/10 * * * * *")//runs for every 10 seconds
 	public void sendMessage(){
 		
 		template.send("queue1",ses->ses.createTextMessage("from Sender:: "+new Date()));
